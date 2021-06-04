@@ -24,18 +24,10 @@ CREATE DATABASE IF NOT EXISTS `Football` DEFAULT CHARACTER SET utf8mb4 COLLATE u
 USE `Football`;
 
 --
--- Déchargement des données de la table `Carton`
---
-
-INSERT INTO `Carton` (`Id`, `Couleur`) VALUES
-(1, 'Rouge'),
-(2, 'Jaune');
-
---
 -- Déchargement des données de la table `Pays`
 --
 
-INSERT INTO `Pays` (`Id`, `Clé`, `Nom`) VALUES
+INSERT INTO `pays` (`Id`, `Clé`, `Nom`) VALUES
 (1, 'INT', 'World'),
 (2, 'ASI', 'Asia'),
 (3, 'AFR', 'Africa'),
@@ -315,7 +307,7 @@ INSERT INTO `Pays` (`Id`, `Clé`, `Nom`) VALUES
 -- Déchargement des données de la table `Saisons`
 --
 
-INSERT INTO `Saisons` (`id`, `LibelléSaison`) VALUES
+INSERT INTO `saisons` (`id`, `LibelléSaison`) VALUES
 (2001, '2000/2001'),
 (2002, '2001/2002'),
 (2003, '2002/2003'),
@@ -342,7 +334,7 @@ INSERT INTO `Saisons` (`id`, `LibelléSaison`) VALUES
 -- Déchargement des données de la table `Stades`
 --
 
-INSERT INTO `Stades` (`Id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`) VALUES
+INSERT INTO `stades` (`Id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`) VALUES
 (1, 'Vitality Stadium', 'Dean Court, Kings Park', 'Fitness First Stadium', 'Dean Court', 12000),
 (2, 'Emirates Stadium', 'Queensland Road', 'Ashburton Grove', 'The Emirates', 60355),
 (3, 'Villa Park', 'Trinity Road', NULL, NULL, 42788),
@@ -909,8 +901,7 @@ INSERT INTO `Stades` (`Id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`)
 (565, 'Sparta-Stadion Het Kasteel', 'Spartapark Noord 1', 'ENECO-stadion', 'Stadion Spangen', 11026),
 (566, 'Stadion Arsenal', NULL, 'Stadion Tula Luzhniki', NULL, 20048),
 (567, 'Stadion Gazovik', 'Tsvetnoj bulvar\' 31', NULL, NULL, 4950),
-(568, 'Stadion Trud', 'ul. Belinskogo 15/1', NULL, NULL, 15500);
-INSERT INTO `Stades` (`stade_id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`) VALUES
+(568, 'Stadion Trud', 'ul. Belinskogo 15/1', NULL, NULL, 15500),
 (569, 'Vodafone Arena', 'Dolmabahçe Gazhane Caddesi, Beşiktaş', 'Besiktas Park', NULL, 43500),
 (570, 'Estadio Victoria de Aguascalientes', 'Avenida Manuel Madrigal 101, Colonia Héroes', 'Estadio Victoria', NULL, 25500),
 (571, 'Arena das Dunas', 'Avenida Senador Salgado Filho, Bairro Lagoa Nova', 'Novo Machadão', 'João Cláudio de Vasconcelos Machado', 42623),
@@ -1480,8 +1471,7 @@ INSERT INTO `Stades` (`stade_id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capac
 (1135, 'Craven Cottage', 'Stevenage Road', 'The Cottage', 'Fortress Fulham', 25700),
 (1136, 'Estadio Municipal Parque Artigas', 'Avenida José Artigas S/N y Blandengues', 'Estadio Artigas', NULL, 5500),
 (1137, 'Navy–Marine Corps Memorial Stadium', '550 Taylor Ave', NULL, NULL, 34000),
-(1138, 'Stade Municipal Jean Rolland', 'Rue des Pommiers Saulniers', NULL, NULL, 2000);
-INSERT INTO `Stades` (`stade_id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`) VALUES
+(1138, 'Stade Municipal Jean Rolland', 'Rue des Pommiers Saulniers', NULL, NULL, 2000),
 (1139, 'Usain Bolt Sports Complex', NULL, 'UWI Paradise Park', NULL, 5000),
 (1140, 'Madinat \'Isa Stadium', 'Demascus Avenue / Road No. 1008, Madinat Isa', 'Khalifa Sports City Stadium', 'Bahrain national Stadium', 20000),
 (1141, 'Stade Didier Pironi', '20 Avenue Descartes', NULL, NULL, 1500),
@@ -2111,8 +2101,7 @@ INSERT INTO `Stades` (`stade_id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capac
 (1765, 'The Playing Fields', 'Shepton Mallet', NULL, NULL, 2500),
 (1766, 'The Stan Robinson Stadium', 'Silver Street', NULL, NULL, 1000),
 (1767, 'Langsford Park', NULL, NULL, NULL, 2000),
-(1768, 'The AJN Stadium', 'Bristol Road', NULL, NULL, 1000);
-INSERT INTO `Stades` (`stade_id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`) VALUES
+(1768, 'The AJN Stadium', 'Bristol Road', NULL, NULL, 1000),
 (1769, 'Stubbs Lane', 'Stubbs Lane / Hill Farm Lane', NULL, NULL, 1000),
 (1770, 'The Armadillo Stadium', 'Northcourt Road', NULL, NULL, 1500),
 (1771, 'Knaresborough Town AFC Ground', '3 Manse Lane', NULL, NULL, 1000),
@@ -2786,8 +2775,7 @@ INSERT INTO `Stades` (`stade_id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capac
 (2439, 'Complejo Deportivo Socialista', 'Avenida Andres Eloy Blanco', 'La Bombonerita', NULL, 7500),
 (2440, 'Hayes Lane', 'Hayes Lane, Bromley', 'The Courage Stadium', NULL, 5000),
 (2441, 'Hama Trucks Arena', 'Giltschwertgasse 81', 'Wiener Neustädter Stadion', 'Teddybären- und Plüsch-Stadion', 7700),
-(2442, 'Theyab Awana Stadium', 'Al Khawaneej Street', 'UAE FA Stadium', NULL, 400);
-INSERT INTO `Stades` (`stade_id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`) VALUES
+(2442, 'Theyab Awana Stadium', 'Al Khawaneej Street', 'UAE FA Stadium', NULL, 400),
 (2443, 'Dubai Club Stadium', 'Dubai-Hatta Road, Al Aweer', 'Shabab Al Ahli Dubai Stadium Al Aweer', NULL, 10000),
 (2444, 'Estadio Corona', 'Calzada Ávila Camacho, Colonia Las Carolinas', 'La Casa Del Dolor Ajeno', 'Estadio Moctezuma', 18050),
 (2445, 'Stadio Georgios Kamaras', 'Atheon, Rizoupoli', 'Stadio Rizoupoli G. Kamaras', NULL, 14856),
@@ -2871,81 +2859,81 @@ INSERT INTO `Stades` (`stade_id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capac
 -- Déchargement des données de la table `Championnats`
 --
 
-INSERT INTO `Championnats` (`saison_id`, `championnat_id`, `Nom`, `Type`, `Format`, `Clé`, `pays_id`) VALUES
-(2018, 1, 'Premier League', 'Club', 'Domestic League', 'EPL', 68),
-(2018, 2, 'Bundesliga', 'Club', 'Domestic League', 'DEB', 80),
-(2018, 3, 'UEFA Champions League', 'Club', 'International Cup', 'UCL', 7),
-(2018, 4, 'Primera Division', 'Club', 'Domestic League', 'ESP', 176),
-(2018, 5, 'Liga Profesional de Fútbol', 'Club', 'Domestic League', 'ARP', 16),
-(2018, 6, 'Serie A', 'Club', 'Domestic League', 'ITSA', 100),
-(2018, 7, 'Eredivisie', 'Club', 'Domestic League', 'NLE', 138),
-(2018, 9, 'UEFA Europa League', 'Club', 'International Cup', 'UEL', 7),
-(2018, 13, 'Ligue 1', 'Club', 'Domestic League', 'FRL1', 76),
-(2018, 21, 'FIFA World Cup', 'International', 'International Cup', 'FIFA', 1),
-(2019, 1, 'Premier League', 'Club', 'Domestic League', 'EPL', 68),
-(2019, 2, 'Bundesliga', 'Club', 'Domestic League', 'DEB', 80),
-(2019, 3, 'UEFA Champions League', 'Club', 'International Cup', 'UCL', 7),
-(2019, 4, 'Primera Division', 'Club', 'Domestic League', 'ESP', 176),
-(2019, 5, 'Liga Profesional de Fútbol', 'Club', 'Domestic League', 'ARP', 16),
-(2019, 6, 'Serie A', 'Club', 'Domestic League', 'ITSA', 100),
-(2019, 7, 'Eredivisie', 'Club', 'Domestic League', 'NLE', 138),
-(2019, 9, 'UEFA Europa League', 'Club', 'International Cup', 'UEL', 7),
-(2019, 13, 'Ligue 1', 'Club', 'Domestic League', 'FRL1', 76),
-(2020, 1, 'Premier League', 'Club', 'Domestic League', 'EPL', 68),
-(2020, 2, 'Bundesliga', 'Club', 'Domestic League', 'DEB', 80),
-(2020, 3, 'UEFA Champions League', 'Club', 'International Cup', 'UCL', 7),
-(2020, 4, 'Primera Division', 'Club', 'Domestic League', 'ESP', 176),
-(2020, 5, 'Liga Profesional de Fútbol', 'Club', 'Domestic League', 'ARP', 16),
-(2020, 6, 'Serie A', 'Club', 'Domestic League', 'ITSA', 100),
-(2020, 7, 'Eredivisie', 'Club', 'Domestic League', 'NLE', 138),
-(2020, 9, 'UEFA Europa League', 'Club', 'International Cup', 'UEL', 7),
-(2020, 13, 'Ligue 1', 'Club', 'Domestic League', 'FRL1', 76),
-(2021, 1, 'Premier League', 'Club', 'Domestic League', 'EPL', 68),
-(2021, 2, 'Bundesliga', 'Club', 'Domestic League', 'DEB', 80),
-(2021, 3, 'UEFA Champions League', 'Club', 'International Cup', 'UCL', 7),
-(2021, 4, 'Primera Division', 'Club', 'Domestic League', 'ESP', 176),
-(2021, 5, 'Liga Profesional de Fútbol', 'Club', 'Domestic League', 'ARP', 16),
-(2021, 6, 'Serie A', 'Club', 'Domestic League', 'ITSA', 100),
-(2021, 7, 'Eredivisie', 'Club', 'Domestic League', 'NLE', 138),
-(2021, 8, 'MLS', 'Club', 'Domestic League', 'MLS', 203),
-(2021, 9, 'UEFA Europa League', 'Club', 'International Cup', 'UEL', 7),
-(2021, 10, 'Copa America', 'International', 'International Cup', 'COPA', 5),
-(2021, 11, 'Africa Cup of Nations', 'International', 'International Cup', 'ACN', 3),
-(2021, 12, 'Liga MX', 'Club', 'Domestic League', 'LMX', 129),
-(2021, 13, 'Ligue 1', 'Club', 'Domestic League', 'FRL1', 76),
-(2021, 14, 'RFPL', 'Club', 'Domestic League', 'RFPL', 160),
-(2021, 15, 'Série A', 'Club', 'Domestic League', 'BRSA', 35),
-(2021, 16, 'European Championship', 'International', 'International Cup', 'EUC', 7),
-(2021, 17, 'UEFA Euro Qualification', 'International', 'International Cup', 'UEQ', 7),
-(2021, 18, 'CONCACAF Gold Cup', 'International', 'International Cup', 'NCAG', 4),
-(2021, 19, 'A League', 'Club', 'Domestic League', 'AUA', 19),
-(2021, 20, 'Copa Libertadores', 'Club', 'International Cup', 'COLI', 5),
-(2021, 22, 'Copa Sudamericana', 'Club', 'International Cup', 'COSA', 5),
-(2021, 23, 'Campeonato JPS', 'Club', 'Domestic League', 'FPD', 55),
-(2021, 24, 'Indian Super League', 'Club', 'Domestic League', 'IND', 94),
-(2021, 25, 'FIFA Friendlies', 'International', 'International Cup', 'FIFAF', 1),
-(2021, 26, 'Coppa Italia', 'Club', 'Domestic Cup', 'TIM', 100),
-(2021, 27, 'FA Cup', 'Club', 'Domestic Cup', 'EFAC', 68),
-(2021, 28, 'Football League Cup', 'Club', 'Domestic League Cup', 'EFLC', 68),
-(2021, 29, 'League One', 'Club', 'Domestic League', 'EL1', 68),
-(2021, 30, 'League Two', 'Club', 'Domestic League', 'EL2', 68),
-(2021, 31, 'Copa Liga Profesional', 'Club', 'Domestic League Cup', 'ARCL', 16),
-(2021, 32, 'WC Qualification', 'International', 'International Cup', 'SAWQ', 5),
-(2021, 33, 'Süper Lig', 'Club', 'Domestic League', 'SLIG', 196),
-(2021, 34, 'Championship', 'Club', 'Domestic League', 'ELC', 68),
-(2021, 35, 'Liga Nacional', 'Club', 'Domestic League', 'GTM', 85),
-(2021, 36, 'Campeonato Mineiro', 'Club', 'Domestic League', 'BRCM', 35),
-(2021, 37, 'WC Qualification', 'International', 'International Cup', 'ASWQ', 2),
-(2021, 38, 'WC Qualification', 'International', 'International Cup', 'AFWQ', 3),
-(2021, 39, 'WC Qualification', 'International', 'International Cup', 'NAWQ', 4),
-(2021, 40, 'WC Qualification', 'International', 'International Cup', 'OWQ', 6),
-(2021, 41, 'WC Qualification', 'International', 'International Cup', 'EWQ', 7);
+INSERT INTO `championnats` (`id`, `saison_id`, `Nom`, `Type`, `Format`, `Clé`, `pays_id`) VALUES
+(1, 2018, 'Premier League', 'Club', 'Domestic League', 'EPL', 68),
+(2, 2018, 'Bundesliga', 'Club', 'Domestic League', 'DEB', 80),
+(3, 2018, 'UEFA Champions League', 'Club', 'International Cup', 'UCL', 7),
+(4, 2018, 'Primera Division', 'Club', 'Domestic League', 'ESP', 176),
+(5, 2018, 'Liga Profesional de Fútbol', 'Club', 'Domestic League', 'ARP', 16),
+(6, 2018, 'Serie A', 'Club', 'Domestic League', 'ITSA', 100),
+(7, 2018, 'Eredivisie', 'Club', 'Domestic League', 'NLE', 138),
+(8, 2018, 'UEFA Europa League', 'Club', 'International Cup', 'UEL', 7),
+(9, 2018, 'Ligue 1', 'Club', 'Domestic League', 'FRL1', 76),
+(10, 2018, 'FIFA World Cup', 'International', 'International Cup', 'FIFA', 1),
+(11, 2019, 'Premier League', 'Club', 'Domestic League', 'EPL', 68),
+(12, 2019, 'Bundesliga', 'Club', 'Domestic League', 'DEB', 80),
+(13, 2019, 'UEFA Champions League', 'Club', 'International Cup', 'UCL', 7),
+(14, 2019, 'Primera Division', 'Club', 'Domestic League', 'ESP', 176),
+(15, 2019, 'Liga Profesional de Fútbol', 'Club', 'Domestic League', 'ARP', 16),
+(16, 2019, 'Serie A', 'Club', 'Domestic League', 'ITSA', 100),
+(17, 2019, 'Eredivisie', 'Club', 'Domestic League', 'NLE', 138),
+(18, 2019, 'UEFA Europa League', 'Club', 'International Cup', 'UEL', 7),
+(19, 2019, 'Ligue 1', 'Club', 'Domestic League', 'FRL1', 76),
+(20, 2020, 'Premier League', 'Club', 'Domestic League', 'EPL', 68),
+(21, 2020, 'Bundesliga', 'Club', 'Domestic League', 'DEB', 80),
+(22, 2020, 'UEFA Champions League', 'Club', 'International Cup', 'UCL', 7),
+(23, 2020, 'Primera Division', 'Club', 'Domestic League', 'ESP', 176),
+(24, 2020, 'Liga Profesional de Fútbol', 'Club', 'Domestic League', 'ARP', 16),
+(25, 2020, 'Serie A', 'Club', 'Domestic League', 'ITSA', 100),
+(26, 2020, 'Eredivisie', 'Club', 'Domestic League', 'NLE', 138),
+(27, 2020, 'UEFA Europa League', 'Club', 'International Cup', 'UEL', 7),
+(28, 2020, 'Ligue 1', 'Club', 'Domestic League', 'FRL1', 76),
+(29, 2021, 'Premier League', 'Club', 'Domestic League', 'EPL', 68),
+(30, 2021, 'Bundesliga', 'Club', 'Domestic League', 'DEB', 80),
+(31, 2021, 'UEFA Champions League', 'Club', 'International Cup', 'UCL', 7),
+(32, 2021, 'Primera Division', 'Club', 'Domestic League', 'ESP', 176),
+(33, 2021, 'Liga Profesional de Fútbol', 'Club', 'Domestic League', 'ARP', 16),
+(34, 2021, 'Serie A', 'Club', 'Domestic League', 'ITSA', 100),
+(35, 2021, 'Eredivisie', 'Club', 'Domestic League', 'NLE', 138),
+(36, 2021, 'MLS', 'Club', 'Domestic League', 'MLS', 203),
+(37, 2021, 'UEFA Europa League', 'Club', 'International Cup', 'UEL', 7),
+(38, 2021, 'Copa America', 'International', 'International Cup', 'COPA', 5),
+(39, 2021, 'Africa Cup of Nations', 'International', 'International Cup', 'ACN', 3),
+(40, 2021, 'Liga MX', 'Club', 'Domestic League', 'LMX', 129),
+(41, 2021, 'Ligue 1', 'Club', 'Domestic League', 'FRL1', 76),
+(42, 2021, 'RFPL', 'Club', 'Domestic League', 'RFPL', 160),
+(43, 2021, 'Série A', 'Club', 'Domestic League', 'BRSA', 35),
+(44, 2021, 'European Championship', 'International', 'International Cup', 'EUC', 7),
+(45, 2021, 'UEFA Euro Qualification', 'International', 'International Cup', 'UEQ', 7),
+(46, 2021, 'CONCACAF Gold Cup', 'International', 'International Cup', 'NCAG', 4),
+(47, 2021, 'A League', 'Club', 'Domestic League', 'AUA', 19),
+(48, 2021, 'Copa Libertadores', 'Club', 'International Cup', 'COLI', 5),
+(49, 2021, 'Copa Sudamericana', 'Club', 'International Cup', 'COSA', 5),
+(50, 2021, 'Campeonato JPS', 'Club', 'Domestic League', 'FPD', 55),
+(51, 2021, 'Indian Super League', 'Club', 'Domestic League', 'IND', 94),
+(52, 2021, 'FIFA Friendlies', 'International', 'International Cup', 'FIFAF', 1),
+(53, 2021, 'Coppa Italia', 'Club', 'Domestic Cup', 'TIM', 100),
+(54, 2021, 'FA Cup', 'Club', 'Domestic Cup', 'EFAC', 68),
+(55, 2021, 'Football League Cup', 'Club', 'Domestic League Cup', 'EFLC', 68),
+(56, 2021, 'League One', 'Club', 'Domestic League', 'EL1', 68),
+(57, 2021, 'League Two', 'Club', 'Domestic League', 'EL2', 68),
+(58, 2021, 'Copa Liga Profesional', 'Club', 'Domestic League Cup', 'ARCL', 16),
+(59, 2021, 'WC Qualification', 'International', 'International Cup', 'SAWQ', 5),
+(60, 2021, 'Süper Lig', 'Club', 'Domestic League', 'SLIG', 196),
+(61, 2021, 'Championship', 'Club', 'Domestic League', 'ELC', 68),
+(62, 2021, 'Liga Nacional', 'Club', 'Domestic League', 'GTM', 85),
+(63, 2021, 'Campeonato Mineiro', 'Club', 'Domestic League', 'BRCM', 35),
+(64, 2021, 'WC Qualification', 'International', 'International Cup', 'ASWQ', 2),
+(65, 2021, 'WC Qualification', 'International', 'International Cup', 'AFWQ', 3),
+(66, 2021, 'WC Qualification', 'International', 'International Cup', 'NAWQ', 4),
+(67, 2021, 'WC Qualification', 'International', 'International Cup', 'OWQ', 6),
+(68, 2021, 'WC Qualification', 'International', 'International Cup', 'EWQ', 7);
 
 --
 -- Déchargement des données de la table `Clubs`
 --
 
-INSERT INTO `Clubs` (`Id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
+INSERT INTO `clubs` (`Id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
 (508, 'BOR', 'AFC Bournemouth', 'Association Football Club Bournemouth', 'Bournemouth', 'http://www.afcb.co.uk', '1890', 'Red', 'Black', NULL, 'The Cherries', 'Boscombe', NULL, 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/AFC_Bournemouth_%282013%29.svg/241px-AFC_Bournemouth_%282013%29.svg.png', 1),
 (509, 'ARS', 'Arsenal FC', 'Arsenal Football Club', 'London', 'http://www.arsenal.com', '1886', 'Red', 'White', NULL, 'The Gunners', NULL, NULL, 'https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/200px-Arsenal_FC.svg.png', 2),
 (510, 'AST', 'Aston Villa FC', 'Aston Villa Football Club', 'Birmingham', 'http://www.avfc.co.uk', '1872', 'Claret', 'Sky Blue', NULL, 'The Villa', 'The Lions', 'The Claret and Blue', 'https://upload.wikimedia.org/wikipedia/en/2/26/Aston_villa_logo16.png', 3),
@@ -3144,8 +3132,7 @@ INSERT INTO `Clubs` (`Id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `Dat
 (703, 'NYC', 'New York City FC', 'New York City Football Club', 'Bronx, NY', 'http://www.nycfc.com', '2013', 'Sky Blue', 'White', NULL, NULL, NULL, NULL, 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/New_York_City_FC.svg/200px-New_York_City_FC.svg.png', 190),
 (704, 'NYR', 'New York Red Bulls', 'New York Red Bulls', 'Harrison, NJ', 'http://www.newyorkredbulls.com', '1995', 'Red', 'White', 'Navy Blue', 'Red Bulls', 'RBNY', 'Metro', 'https://upload.wikimedia.org/wikipedia/en/thumb/5/51/New_York_Red_Bulls_logo.svg/283px-New_York_Red_Bulls_logo.svg.png', 190),
 (705, 'ORL', 'Orlando City SC', 'Orlando City Soccer Club', 'Orlando, FL', 'http://www.orlandocitysoccer.com', '2008', 'Purple', 'Gold', NULL, 'The Lions', NULL, NULL, 'https://upload.wikimedia.org/wikipedia/en/thumb/6/6a/Orlando_City_2014.svg/296px-Orlando_City_2014.svg.png', 790),
-(706, 'PHI', 'Philadelphia Union', 'Philadelphia Union', 'Chester, PA', 'http://www.philadelphiaunion.com', '2008', 'Blue', 'Gold', NULL, 'Zolos', 'The U', NULL, 'https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Philadelphia_Union_2010.svg/500px-Philadelphia_Union_2010.svg.png', 192);
-INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
+(706, 'PHI', 'Philadelphia Union', 'Philadelphia Union', 'Chester, PA', 'http://www.philadelphiaunion.com', '2008', 'Blue', 'Gold', NULL, 'Zolos', 'The U', NULL, 'https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Philadelphia_Union_2010.svg/500px-Philadelphia_Union_2010.svg.png', 192),
 (707, 'POR', 'Portland Timbers', 'Portland Timbers', 'Portland, OR', 'http://www.portlandtimbers.com', '2001', 'Green', 'White', 'Yellow', 'The Timbers', NULL, NULL, 'https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Portland_Timbers_logo.svg/220px-Portland_Timbers_logo.svg.png', 193),
 (708, 'RSL', 'Real Salt Lake', 'Real Salt Lake', 'Salt Lake City, UT', 'http://www.realsaltlake.com', '2005', 'Red', 'Royal Blue', 'Yellow', 'Claret and Cobalt', 'Royals', 'La Realeza', 'https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Real_Salt_Lake_2010.svg/240px-Real_Salt_Lake_2010.svg.png', 194),
 (709, 'SJE', 'San Jose Earthquakes', 'San Jose Earthquakes', 'Santa Clara, CA', 'http://www.sjearthquakes.com', '1974', 'Black', 'White', 'Blue', NULL, NULL, NULL, 'https://upload.wikimedia.org/wikipedia/en/thumb/9/98/San_Jose_Earthquakes_2014.svg/500px-San_Jose_Earthquakes_2014.svg.png', 195),
@@ -3391,8 +3378,7 @@ INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`,
 (949, 'ISL', 'Iceland', 'Knattspyrnusamband Íslands', 'Reykjavík', 'http://www.ksi.is', '1947', 'Blue', 'White', NULL, 'Strákarnir okkar (Our Boys)', NULL, NULL, NULL, 543),
 (950, 'ITA', 'Italy', 'Federazione Italiana Giuoco Calcio', 'Roma', 'http://www.figc.it', '1898', 'Blue', 'White', NULL, 'Gli Azzurri', NULL, NULL, NULL, 152),
 (951, 'NIR', 'Northern Ireland', 'Irish Football Association', 'Belfast', 'http://www.irishfa.com', '1880', 'Green', 'White', NULL, NULL, NULL, NULL, NULL, 355),
-(952, 'POL', 'Poland', 'Polski Zwiazek Pilki Noznej', 'Warszawa', 'http://www.pzpn.pl', '1919', 'White', 'Red', NULL, NULL, NULL, NULL, NULL, 540);
-INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
+(952, 'POL', 'Poland', 'Polski Zwiazek Pilki Noznej', 'Warszawa', 'http://www.pzpn.pl', '1919', 'White', 'Red', NULL, NULL, NULL, NULL, NULL, 540),
 (953, 'PRT', 'Portugal', 'Federação Portuguesa de Futebol', 'Lisboa', 'http://www.fpf.pt', '1914', 'Red', 'Green', NULL, 'A Selecção', 'A Seleção', 'Os Navegadores', NULL, 99),
 (954, 'IRE', 'Republic of Ireland', 'Football Association of Ireland', 'Dublin', 'http://www.fai.ie', '1921', 'Green', 'White', 'Orange', NULL, NULL, NULL, NULL, 203),
 (955, 'ROM', 'Romania', 'Federaţia Română de Fotbal', 'Bucureşti', 'http://www.frf.ro', '1909', 'Yellow', 'Blue', 'Red', NULL, NULL, NULL, NULL, 1008),
@@ -3666,8 +3652,7 @@ INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`,
 (1223, 'TOL', 'CD Tolima', 'Corporación Club Deportes Tolima', 'Ibagué', 'http://www.clubdeportestolima.com.co', '1954', 'Gold', 'Claret', NULL, 'El Vinotinto y Oro', 'Los Pijaos', NULL, NULL, 987),
 (1224, 'UCA', 'CD Universidad Católica', 'Club Deportivo de la Pontificia Universidad Católica del Ecuador', 'Quito', 'http://www.trencitoazul.com', '1963', 'Dark Blue', 'Light Blue', 'White', 'Camarattas', 'Trencito Azul', 'Celestes', NULL, 408),
 (1225, 'UNC', 'CF Universidad de Chile', 'Corporacion de Futbol Universidad de Chile', 'Santiago', 'http://www.udechile.cl', '1927', 'Blue', 'Red', NULL, NULL, NULL, NULL, NULL, 240),
-(1226, 'ALI', 'Alianza Lima', 'Club Alianza Lima', 'Lima', 'http://www.clubalianzalima.com', '1901', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 988);
-INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
+(1226, 'ALI', 'Alianza Lima', 'Club Alianza Lima', 'Lima', 'http://www.clubalianzalima.com', '1901', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 988),
 (1227, 'BOL', 'Club Bolívar', 'Club Atlético Bolívar', 'La Paz', 'http://www.clubbolivar.com', '1925', 'Light Blue', NULL, NULL, 'La Academia Paceña', 'Los Celestes', NULL, NULL, 407),
 (1228, 'CEP', 'Cerro Porteño', 'Club Cerro Porteño', 'Asunción', 'http://www.clubcerro.com', '1912', 'Red', 'Blue', NULL, NULL, NULL, NULL, NULL, 1019),
 (1229, NULL, 'Club Juan Aurich', 'Club Juan Aurich de la Victoria', 'Chiclayo', 'http://www.juanaurich.net', '1922', 'Red', 'White', NULL, 'El Ciclón del Norte', 'El Manchester del Norte', NULL, NULL, 2262),
@@ -3954,8 +3939,7 @@ INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`,
 (1510, 'SIC', 'ASD Sicula Leonzio', 'Associazione Sportiva Dilettantistica Sicula Leonzio', 'Lentini', 'http://www.siculaleonzio.it/', '1909', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1307),
 (1511, 'CAT', 'Catania', 'Calcio Catania', 'Catania', 'http://www.calciocatania.it', '1908', 'Sky Blue', 'Red', NULL, 'Etnei', NULL, NULL, NULL, 1308),
 (1512, 'CAM', 'Campodarsego Calcio 1974', 'Campodarsego Calcio 1974', 'Campodarsego', 'http://www.campodarsegocalcio.it', '1974', 'Red', 'White', NULL, NULL, NULL, NULL, NULL, 1309),
-(1513, 'CAR', 'Carrarese', 'Carrarese Calcio 1908', 'Carrara', 'http://www.carraresecalcio.it', '1908', 'Yellow', 'Blue', NULL, 'Azzurri', 'Gialloazzurri', 'Apuani', NULL, 1310);
-INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
+(1513, 'CAR', 'Carrarese', 'Carrarese Calcio 1908', 'Carrara', 'http://www.carraresecalcio.it', '1908', 'Yellow', 'Blue', NULL, 'Azzurri', 'Gialloazzurri', 'Apuani', NULL, 1310),
 (1514, 'SUD', 'Südtirol', 'Fußball Club Südtirol', 'Bressanone', 'http://www.fc-suedtirol.com', '1974', 'White', 'Red', NULL, NULL, NULL, NULL, NULL, 1311),
 (1515, 'PIC', 'PS AZ Picerno 1973', 'Polisportiva AZ Picerno 1973', 'Picerno', 'http://www.azpicerno.it', '1973', 'Red', 'Blue', NULL, NULL, NULL, NULL, NULL, 1630),
 (1516, 'MON', 'SS Monopoli', 'Società Sportiva Monopoli 1966', 'Monopoli', 'http://www.monopolicalcio.it', '2003', 'White', 'Green', NULL, 'Gabbiano', NULL, NULL, NULL, 1313),
@@ -4257,8 +4241,7 @@ INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`,
 (1813, 'CBS', 'Norwich CBS', 'Norwich CBS Football Club', 'Norwich', NULL, '1888', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (1814, 'NOR', 'Norwich Utd', 'Norwich United Football Club', 'Blofield', 'http://www.norwichunitedfc.com/', '1903', 'Blue', 'Yellow', NULL, NULL, NULL, NULL, NULL, NULL),
 (1815, NULL, 'Nostell Miners', 'Nostell Miners Welfare Football Club', NULL, 'http://www.nostell.com', '1928', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1975),
-(1816, 'OAD', 'Oadby Town', 'Oadby Town Football Club', 'Oadby', 'http://www.pitchero.com/clubs/oadbytown/', '1937', 'Red', 'White', NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
+(1816, 'OAD', 'Oadby Town', 'Oadby Town Football Club', 'Oadby', 'http://www.pitchero.com/clubs/oadbytown/', '1937', 'Red', 'White', NULL, NULL, NULL, NULL, NULL, NULL),
 (1817, 'ODD', 'Odd Down AFC', 'Odd Down Association Football Club', 'Bath, Somerset', NULL, '1901', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 2370),
 (1818, 'OXH', 'Oxhey Jets', 'Oxhey Jets Football Club', 'South Oxhey', 'http://www.oxheyjets.com', '1972', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1739),
 (1819, 'PAD', 'Padiham', 'Padiham Football Club', 'Padiham', 'http://www.pitchero.com/clubs/padihamfc', '1878', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 2090),
@@ -4553,8 +4536,7 @@ INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`,
 (2108, 'HAR', 'Harrogate Town AFC', 'Harrogate Town Association Football Club', 'Harrogate', 'https://www.harrogatetownafc.com', '1914', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1854),
 (2109, 'HAR', 'Harrow Borough', 'Harrow Borough Football Club', 'London', 'http://www.harrowboro.com', '1933', 'Red', 'White', NULL, NULL, NULL, NULL, NULL, 1855),
 (2110, 'HAR', 'Hartlepool Utd', 'Hartlepool United Football Club', 'Hartlepool', 'http://www.hartlepoolunited.co.uk', '1908', 'Blue', 'White', NULL, 'Pools', 'Monkey Hangers', NULL, NULL, 1856),
-(2111, 'HAR', 'Hartley', 'Hartley Wintney Football Club', 'Hartley Wintney', 'http://www.pitchero.com/clubs/hartleywintney/', '1897', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1857);
-INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
+(2111, 'HAR', 'Hartley', 'Hartley Wintney Football Club', 'Hartley Wintney', 'http://www.pitchero.com/clubs/hartleywintney/', '1897', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1857),
 (2112, 'HAS', 'Hastings Utd', 'Hastings United Football Club', 'Hastings, Sussex', 'http://www.hastingsunitedfc.co.uk', '1894', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 2043),
 (2113, 'HAV', 'Havant & Water', 'Havant & Waterlooville Football Club', 'Havant', 'https://www.havantandwaterloovillefc.co.uk', '1998', 'Yellow', 'Blue', NULL, 'The Hawks', NULL, NULL, NULL, 1858),
 (2114, NULL, 'Haverhill Borough FC', 'Haverhill Borough Football Club', 'Haverhill, Suffolk', 'http://www.pitchero.com/clubs/haverhillboroughfc', '2011', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
@@ -4849,8 +4831,7 @@ INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`,
 (2403, 'BRI', 'Bridgnorth', NULL, 'Bridgnorth', NULL, '2013', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (2404, 'BEN', 'Benfleet', 'Benfleet Football Club', 'Benfleet, Essex', NULL, '1922', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (2405, 'BEW', 'Bewdley Town', NULL, NULL, 'http://www.bewdleytownfootballclub.com', '1978', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 2405),
-(2406, 'BLA', 'Blackstones', 'Blackstones Football Club', 'Stamford', NULL, '1891', 'Black', 'Green', NULL, NULL, NULL, NULL, NULL, 4);
-INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
+(2406, 'BLA', 'Blackstones', 'Blackstones Football Club', 'Stamford', NULL, '1891', 'Black', 'Green', NULL, NULL, NULL, NULL, NULL, 4),
 (2407, 'BRO', 'Brocton FC', NULL, NULL, 'http://www.broctonfc.com', '1937', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (2408, 'BUR', 'Burton Park', 'Burton Park Wanderers Football Club', 'Burton Latimer, Northamptonshire', NULL, '1961', 'Black', 'Blue', NULL, NULL, NULL, NULL, NULL, NULL),
 (2409, 'CAM', 'Cammell Laird', 'Cammell Laird Football Club', 'Birkenhead', NULL, '1889', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
@@ -4934,161 +4915,51 @@ INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`,
 (2487, 'GUA', 'Guayaquil City FC', 'Guayaquil City Football Club', 'Guayaquil', NULL, '2007', 'Red', 'Black', NULL, 'Banda roja', 'La Fuerza Roja del Guayas', 'Los Diablos Rojos', NULL, 2473),
 (2488, 'MET', 'Metropolitanos FC', 'Metropolitanos Fútbol Club', 'Caracas', 'http://www.metropolitanosfc.com', '2012', 'Violet', 'White', NULL, 'Los Violetas', NULL, NULL, NULL, 415);
 
---
--- Déchargement des données de la table `Championnats_Clubs`
---
-
-INSERT INTO `Championnats_Clubs` (`saison_id`, `championnat_id`, `club_id`) VALUES
-(2019, 13, 549),
-(2019, 13, 597),
-(2019, 13, 600),
-(2019, 13, 723),
-(2019, 13, 741),
-(2019, 13, 822),
-(2019, 13, 893),
-(2019, 13, 894),
-(2019, 13, 896),
-(2019, 13, 897),
-(2019, 13, 899),
-(2019, 13, 900),
-(2019, 13, 901),
-(2019, 13, 903),
-(2019, 13, 904),
-(2019, 13, 905),
-(2019, 13, 939),
-(2019, 13, 1119),
-(2019, 13, 1499),
-(2019, 13, 2368),
-(2020, 13, 549),
-(2020, 13, 597),
-(2020, 13, 600),
-(2020, 13, 723),
-(2020, 13, 741),
-(2020, 13, 822),
-(2020, 13, 893),
-(2020, 13, 897),
-(2020, 13, 899),
-(2020, 13, 900),
-(2020, 13, 901),
-(2020, 13, 904),
-(2020, 13, 905),
-(2020, 13, 906),
-(2020, 13, 939),
-(2020, 13, 940),
-(2020, 13, 1118),
-(2020, 13, 1119),
-(2020, 13, 1499),
-(2020, 13, 1558),
-(2021, 13, 549),
-(2021, 13, 597),
-(2021, 13, 600),
-(2021, 13, 723),
-(2021, 13, 741),
-(2021, 13, 822),
-(2021, 13, 893),
-(2021, 13, 896),
-(2021, 13, 897),
-(2021, 13, 899),
-(2021, 13, 900),
-(2021, 13, 901),
-(2021, 13, 904),
-(2021, 13, 905),
-(2021, 13, 939),
-(2021, 13, 940),
-(2021, 13, 1119),
-(2021, 13, 1499),
-(2021, 13, 1558),
-(2021, 13, 2368);
 
 --
 -- Déchargement des données de la table `Joueurs`
 --
 
-INSERT INTO `Joueurs` (`Id`, `Prénom`, `Nom`, `Poste`, `PiedFort`, `Taille`, `Poids`, `DateNaissance`, `VilleNaissance`, `Nationalité`, `PhotoURL`, `TypeJoueur`) VALUES
-(90000001, 'Juninho', 'Pernambucano', 'M', 'Left', 179, 71, '1975-01-30', 'Recife', 'Brazil', 'https://fmdataba.com/images/p2/275547.png', 'R'),
-(90000002, 'Grégory', 'Coupet', 'GK', 'Right', 181, 80, '1972-12-31', 'Le Puy-en-Velay', 'France', 'https://sortitoutsi.net/uploads/face/12433.png', 'R'),
-(90000003, 'Cristiano Marques', 'Gomes', 'D', 'Right', 183, 77, '1977-06-03', 'Guarulhos', 'Brazil', 'https://www.ol.fr/-/media/project/olg/olweb/people/staff-members/portraits/2018/07/11/258.jpg?h=1200&la=fr-FR&w=900&rev=73cf80705f4342a692cb21788b75c37a', 'R'),
-(90000004, 'Sonny ', 'Anderson', 'A', 'Right', 181, 72, '1970-09-19', 'Goiatuba', 'Brazil', 'https://static.blog4ever.com/2014/12/790899/artfichier_790899_6978479_201702272038506.jpg', 'R'),
-(90000005, 'Cláudio', 'Caçapa', 'D', 'Left', 184, 77, '1976-05-29', 'Lavras', 'Brazil', 'https://sortitoutsi.net/uploads/face/3300230.png', 'R'),
-(90000006, 'Michael', 'Essien', 'M', 'Left', 177, 85, '1982-12-03', 'Accra', 'Ghanéen', 'https://cdn.soccerwiki.org/images/player/3875.png', 'R'),
-(90026538, 'Memphis', 'Depay', 'A', 'Right', 176, 78, '1994-02-13', 'Moordrecht', 'Netherlands', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90026538.png', 'A'),
-(90028544, 'Jason Gregory', 'Denayer', 'D', 'Right', 184, 70, '1995-06-28', 'Brussels', 'Belgium', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90028544.png', 'A'),
-(90028973, 'Anthony', 'Lopes', 'GK', 'Left', 184, 81, '1990-10-01', 'Givors', 'Portugal', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90028973.png', 'A'),
-(90028988, 'Gnaly Albert Maxwel', 'Cornet', 'A', 'Right', 179, 69, '1996-09-27', 'Bregbo', 'Côte d’Ivoire', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90028988.png', 'A'),
-(90029338, 'Islam', 'Slimani', 'A', 'Right', 187, 80, '1988-06-18', 'Alger', 'Algeria', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90029338.png', 'A'),
-(90031009, 'Mattia', 'De Sciglio', 'D', 'Right', 183, 74, '1992-10-20', 'Milano', 'Italy', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90031009.png', 'A'),
-(90033064, 'Marcelo Antonio', 'Guedes Filho', 'D', 'Right', 191, 85, '1987-05-20', 'São Vicente, SP', 'Brazil', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90033064.png', 'A'),
-(90038408, 'Léo', 'Dubois', 'D', 'Right', 178, 62, '1994-09-14', 'Segré', 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90038408.png', 'A'),
-(90039317, 'Lucas', 'Tolentino Coelho de Lima', 'M', 'Left', 180, 72, '1997-08-27', 'Rio de Janeiro, RJ', 'Brazil', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90039317.png', 'A'),
-(90039586, 'Thiago Henrique', 'Mendes Ribeiro', 'M', 'Right', 177, 75, '1992-03-15', 'São Luís, MA', 'Brazil', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90039586.png', 'A'),
-(90044073, 'Karl', 'Toko Ekambi', 'A', 'Right', 183, 70, '1992-09-14', 'Paris', 'Cameroon', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90044073.png', 'A'),
-(90044306, 'Houssem', 'Aouar', 'M', 'Right', 175, 70, '1998-06-30', 'Lyon', 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90044306.png', 'A'),
-(90046019, 'Philana Tinotenda', 'Kadewere', 'M', 'Right', 183, 72, '1996-01-05', 'Harare', 'Zimbabwe', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90046019.png', 'A'),
-(90048612, 'Bruno', 'Guimarães Rodriguez Moura', 'M', 'Right', 182, 77, '1997-11-16', 'Rio de Janeiro, RJ', 'Brazil', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/0.png', 'A'),
-(90050972, 'Julian', 'Pollersbeck', 'GK', 'Right', 195, 87, '1994-08-16', 'Emmerting', 'Germany', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90050972.png', 'A'),
-(90070012, 'Djamel Eddine', 'Benlamri', 'D', 'Right', 190, 80, '1989-12-25', 'Alger', 'Algeria', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/0.png', 'A'),
-(90070204, 'Malcolm', 'Barcola', 'GK', 'Right', 195, 88, '1999-05-14', 'Lyon', 'Togo', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90070204.png', 'A'),
-(90071283, 'Maxence', 'Caqueret', 'M', 'Right', 174, 63, '2000-02-15', 'Vénissieux', 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90071283.png', 'A'),
-(90083550, 'Mathis Rayan', 'Cherki', 'M', 'Right', 176, 70, '2003-08-17', 'Pusignan', 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/0.png', 'A'),
-(90084404, 'Melvin Michel Maxence', 'Bard', 'D', 'Left', 173, 69, '2000-11-06', 'Ecully', 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90084404.png', 'A'),
-(90085783, 'Sinaly', 'Diomandé', 'D', 'Right', 184, 79, '2001-04-09', 'Yopougon', 'Côte d’Ivoire', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90085783.png', 'A'),
-(90088465, 'Cenk', 'Özkacar', 'D', 'Left', 190, 82, '2000-10-06', 'İzmir', 'Turkey', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90088465.png', 'A'),
-(90088502, 'Yaya', 'Soumaré', 'M', 'Right', 173, 55, '2000-06-23', 'Vénissieux', 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90088502.png', 'A'),
-(90090397, 'Malo', 'Gusto', 'D', 'Right', 179, 66, '2003-05-19', 'Lyon', 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/0.png', 'A'),
-(90091598, 'Yaya ', 'Soumaré', 'M', 'Right', 173, 55, '2000-01-23', 'Vénissieux', 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/0.png', 'A'),
-(90092137, 'Florent', 'da Silva', 'M', NULL, NULL, NULL, '2003-04-02', NULL, 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/0.png', 'A'),
-(90092731, 'Camilo', 'Reijers de Oliveira', 'M', NULL, NULL, NULL, '1999-02-23', 'Mogi Mirim', 'Brazil', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/0.png', 'A');
-
---
--- Déchargement des données de la table `JoueursEnActivité`
---
-
-UPDATE JoueursEnActivité SET Numéro = 10, club_id = 597 WHERE joueur_id = 90026538;
-UPDATE JoueursEnActivité SET Numéro = 5, club_id = 597 WHERE joueur_id = 90028544;
-UPDATE JoueursEnActivité SET Numéro = 1, club_id = 597 WHERE joueur_id = 90028973;
-UPDATE JoueursEnActivité SET Numéro = 27, club_id = 597 WHERE joueur_id = 90028988;
-UPDATE JoueursEnActivité SET Numéro = 20, club_id = 597 WHERE joueur_id = 90029338;
-UPDATE JoueursEnActivité SET Numéro = 22, club_id = 597 WHERE joueur_id = 90031009;
-UPDATE JoueursEnActivité SET Numéro = 6, club_id = 597 WHERE joueur_id = 90033064;
-UPDATE JoueursEnActivité SET Numéro = 14, club_id = 597 WHERE joueur_id = 90038408;
-UPDATE JoueursEnActivité SET Numéro = 12, club_id = 597 WHERE joueur_id = 90039317;
-UPDATE JoueursEnActivité SET Numéro = 23, club_id = 597 WHERE joueur_id = 90039586;
-UPDATE JoueursEnActivité SET Numéro = 7, club_id = 597 WHERE joueur_id = 90044073;
-UPDATE JoueursEnActivité SET Numéro = 8, club_id = 597 WHERE joueur_id = 90044306;
-UPDATE JoueursEnActivité SET Numéro = 11, club_id = 597 WHERE joueur_id = 90046019;
-UPDATE JoueursEnActivité SET Numéro = 39, club_id = 597 WHERE joueur_id = 90048612;
-UPDATE JoueursEnActivité SET Numéro = 30, club_id = 597 WHERE joueur_id = 90050972;
-UPDATE JoueursEnActivité SET Numéro = 3, club_id = 597 WHERE joueur_id = 90070012;
-UPDATE JoueursEnActivité SET Numéro = 40, club_id = 597 WHERE joueur_id = 90070204;
-UPDATE JoueursEnActivité SET Numéro = 25, club_id = 597 WHERE joueur_id = 90071283;
-UPDATE JoueursEnActivité SET Numéro = 18, club_id = 597 WHERE joueur_id = 90083550;
-UPDATE JoueursEnActivité SET Numéro = 26, club_id = 597 WHERE joueur_id = 90084404;
-UPDATE JoueursEnActivité SET Numéro = 2, club_id = 597 WHERE joueur_id = 90085783;
-UPDATE JoueursEnActivité SET Numéro = 19, club_id = 597 WHERE joueur_id = 90088465;
-UPDATE JoueursEnActivité SET Numéro = NULL, club_id = 597 WHERE joueur_id = 90088502;
-UPDATE JoueursEnActivité SET Numéro = 17, club_id = 597 WHERE joueur_id = 90090397;
-UPDATE JoueursEnActivité SET Numéro = 29, club_id = 597 WHERE joueur_id = 90091598;
-UPDATE JoueursEnActivité SET Numéro = 28, club_id = 597 WHERE joueur_id = 90092137;
-UPDATE JoueursEnActivité SET Numéro = 15, club_id = 597 WHERE joueur_id = 90092731;
-
-
---
--- Déchargement des données de la table `JoueursRetraite`
---
-
-UPDATE JoueursRetraite SET FinCarriere = '2014-01-30' WHERE joueur_id = 90000001;
-UPDATE JoueursRetraite SET FinCarriere = '2011-05-29' WHERE joueur_id = 90000002;
-UPDATE JoueursRetraite SET FinCarriere = '2014-01-01' WHERE joueur_id = 90000003;
-UPDATE JoueursRetraite SET FinCarriere = '2007-06-11' WHERE joueur_id = 90000004;
-UPDATE JoueursRetraite SET FinCarriere = '2012-01-01' WHERE joueur_id = 90000005;
-UPDATE JoueursRetraite SET FinCarriere = '2021-04-18' WHERE joueur_id = 90000006;
-
+INSERT INTO `joueurs` (`Id`, `Prénom`, `Nom`, `Poste`, `PiedFort`, `Taille`, `Poids`, `DateNaissance`, `VilleNaissance`, `Nationalité`, `PhotoURL`, `TypeJoueur`, `Numéro`, `club_id`) VALUES
+(90000001, 'Juninho', 'Pernambucano', 'M', 'Left', 179, 71, '1975-01-30', 'Recife', 'Brazil', 'https://fmdataba.com/images/p2/275547.png', 'R', NULL, 597),
+(90000002, 'Grégory', 'Coupet', 'GK', 'Right', 181, 80, '1972-12-31', 'Le Puy-en-Velay', 'France', 'https://sortitoutsi.net/uploads/face/12433.png', 'R', NULL, 597),
+(90000003, 'Cristiano Marques', 'Gomes', 'D', 'Right', 183, 77, '1977-06-03', 'Guarulhos', 'Brazil', 'https://www.ol.fr/-/media/project/olg/olweb/people/staff-members/portraits/2018/07/11/258.jpg?h=1200&la=fr-FR&w=900&rev=73cf80705f4342a692cb21788b75c37a', 'R', NULL, 597),
+(90000004, 'Sonny ', 'Anderson', 'A', 'Right', 181, 72, '1970-09-19', 'Goiatuba', 'Brazil', 'https://static.blog4ever.com/2014/12/790899/artfichier_790899_6978479_201702272038506.jpg', 'R', NULL, 597),
+(90000005, 'Cláudio', 'Caçapa', 'D', 'Left', 184, 77, '1976-05-29', 'Lavras', 'Brazil', 'https://sortitoutsi.net/uploads/face/3300230.png', 'R', NULL, 597),
+(90000006, 'Michael', 'Essien', 'M', 'Left', 177, 85, '1982-12-03', 'Accra', 'Ghanéen', 'https://cdn.soccerwiki.org/images/player/3875.png', 'R', NULL, 597),
+(90026538, 'Memphis', 'Depay', 'A', 'Right', 176, 78, '1994-02-13', 'Moordrecht', 'Netherlands', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90026538.png', 'A', '10', 597),
+(90028544, 'Jason Gregory', 'Denayer', 'D', 'Right', 184, 70, '1995-06-28', 'Brussels', 'Belgium', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90028544.png', 'A', '5', 597),
+(90028973, 'Anthony', 'Lopes', 'GK', 'Left', 184, 81, '1990-10-01', 'Givors', 'Portugal', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90028973.png', 'A', '1', 597),
+(90028988, 'Gnaly Albert Maxwel', 'Cornet', 'A', 'Right', 179, 69, '1996-09-27', 'Bregbo', 'Côte d’Ivoire', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90028988.png', 'A', '27', 597),
+(90029338, 'Islam', 'Slimani', 'A', 'Right', 187, 80, '1988-06-18', 'Alger', 'Algeria', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90029338.png', 'A', '20', 597),
+(90031009, 'Mattia', 'De Sciglio', 'D', 'Right', 183, 74, '1992-10-20', 'Milano', 'Italy', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90031009.png', 'A', '22', 597),
+(90033064, 'Marcelo Antonio', 'Guedes Filho', 'D', 'Right', 191, 85, '1987-05-20', 'São Vicente, SP', 'Brazil', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90033064.png', 'A', '6', 597),
+(90038408, 'Léo', 'Dubois', 'D', 'Right', 178, 62, '1994-09-14', 'Segré', 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90038408.png', 'A', '14', 597),
+(90039317, 'Lucas', 'Tolentino Coelho de Lima', 'M', 'Left', 180, 72, '1997-08-27', 'Rio de Janeiro, RJ', 'Brazil', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90039317.png', 'A', '12', 597),
+(90039586, 'Thiago Henrique', 'Mendes Ribeiro', 'M', 'Right', 177, 75, '1992-03-15', 'São Luís, MA', 'Brazil', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90039586.png', 'A', '23', 597),
+(90044073, 'Karl', 'Toko Ekambi', 'A', 'Right', 183, 70, '1992-09-14', 'Paris', 'Cameroon', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90044073.png', 'A', '7', 597),
+(90044306, 'Houssem', 'Aouar', 'M', 'Right', 175, 70, '1998-06-30', 'Lyon', 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90044306.png', 'A', '8', 597),
+(90046019, 'Philana Tinotenda', 'Kadewere', 'M', 'Right', 183, 72, '1996-01-05', 'Harare', 'Zimbabwe', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90046019.png', 'A', '11', 597),
+(90048612, 'Bruno', 'Guimarães Rodriguez Moura', 'M', 'Right', 182, 77, '1997-11-16', 'Rio de Janeiro, RJ', 'Brazil', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/0.png', 'A', '39', 597),
+(90050972, 'Julian', 'Pollersbeck', 'GK', 'Right', 195, 87, '1994-08-16', 'Emmerting', 'Germany', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90050972.png', 'A', '30', 597),
+(90070012, 'Djamel Eddine', 'Benlamri', 'D', 'Right', 190, 80, '1989-12-25', 'Alger', 'Algeria', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/0.png', 'A', '3', 597),
+(90070204, 'Malcolm', 'Barcola', 'GK', 'Right', 195, 88, '1999-05-14', 'Lyon', 'Togo', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90070204.png', 'A', '40', 597),
+(90071283, 'Maxence', 'Caqueret', 'M', 'Right', 174, 63, '2000-02-15', 'Vénissieux', 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90071283.png', 'A', '25', 597),
+(90083550, 'Mathis Rayan', 'Cherki', 'M', 'Right', 176, 70, '2003-08-17', 'Pusignan', 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/0.png', 'A', '18', 597),
+(90084404, 'Melvin Michel Maxence', 'Bard', 'D', 'Left', 173, 69, '2000-11-06', 'Ecully', 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90084404.png', 'A', '26', 597),
+(90085783, 'Sinaly', 'Diomandé', 'D', 'Right', 184, 79, '2001-04-09', 'Yopougon', 'Côte d’Ivoire', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90085783.png', 'A', '2', 597),
+(90088465, 'Cenk', 'Özkacar', 'D', 'Left', 190, 82, '2000-10-06', 'İzmir', 'Turkey', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90088465.png', 'A', '19', 597),
+(90088502, 'Yaya', 'Soumaré', 'M', 'Right', 173, 55, '2000-06-23', 'Vénissieux', 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/90088502.png', 'A', NULL, 597),
+(90090397, 'Malo', 'Gusto', 'D', 'Right', 179, 66, '2003-05-19', 'Lyon', 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/0.png', 'A', '17', 597),
+(90091598, 'Yaya ', 'Soumaré', 'M', 'Right', 173, 55, '2000-01-23', 'Vénissieux', 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/0.png', 'A', '29', 597),
+(90092137, 'Florent', 'da Silva', 'M', NULL, NULL, NULL, '2003-04-02', NULL, 'France', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/0.png', 'A', '28', 597),
+(90092731, 'Camilo', 'Reijers de Oliveira', 'M', NULL, NULL, NULL, '1999-02-23', 'Mogi Mirim', 'Brazil', 'https://s3-us-west-2.amazonaws.com/static.fantasydata.com/headshots/soc/low-res/0.png', 'A', '15', 597);
 
 --
 -- Déchargement des données de la table `Matchs`
 --
 
-INSERT INTO `Matchs` (`Id`, `DateMatch`, `ButEquipeExterieur`, `ButEquipeDomicile`, `club_idExterieur`, `club_idDomicile`, `stade_id`, `saison_id`, `championnat_id`) VALUES
+INSERT INTO `matchs` (`Id`, `DateMatch`, `ButEquipeExterieur`, `ButEquipeDomicile`, `club_idExterieur`, `club_idDomicile`, `stade_id`, `saison_id`, `championnat_id`) VALUES
 (3013, '2020-10-25T14:00:00', 6, '0', 904, 900, 232, 2021, 13),
 (30508, '2020-09-15T19:00:00', 2, '3', 597, 900, 232, 2021, 13),
 (30509, '2020-09-16T19:00:00', 0, '2', 940, 600, 90, 2021, 13),
@@ -5475,41 +5346,31 @@ INSERT INTO `Matchs` (`Id`, `DateMatch`, `ButEquipeExterieur`, `ButEquipeDomicil
 -- Déchargement des données de la table `Stats_Joueurs`
 --
 
-INSERT INTO `Stats_Joueurs` (`saison_id`, `joueur_id`, `NombreTitularisation`, `NombreMatch`, `Minutes`, `Buts`, `PassesDécisives`, `TirsCadrés`, `CartonJaune`, `CartonRouge`, `Centres`, `TaclesReussis`, `Interceptions`, `ButCSC`, `Fautes`, `HorsJeu`, `Passes`, `PassesReussis`, `CornersGagnés`, `TirsBloqués`, `Touches`, `ArretsGardien`, `ButsEncaissésGardien`, `CleanSheetsGardien`, `PenaltyMarqué`, `PenaltyManqué`) VALUES
-(2021, 90026538, 28, 32, '1606.8', 10, 4, '29.00', '1.70', '0.00', '86.90', '2.10', '2.50', 0, '19.30', '4.10', '595.70', '452.70', '25.10', '6.20', '1013.70', '0.00', 0, 0, '0.80', '0.00'),
-(2021, 90028544, 27, 27, '1494.1', 0, 0, '0.80', '0.00', '0.00', '0.80', '10.90', '16.10', 0, '12.20', '0.00', '966.00', '918.30', '0.40', '0.40', '1116.10', '0.00', 0, 0, '0.00', '0.00'),
-(2021, 90028973, 32, 32, '1854.7', 0, 0, '0.00', '0.40', '0.00', '0.00', '0.80', '0.40', 1, '0.40', '0.00', '535.80', '434.70', '0.00', '0.00', '720.00', '52.20', 20, 5, '0.00', '0.40'),
-(2021, 90028988, 24, 30, '1298.3', 1, 2, '3.70', '2.10', '0.00', '49.60', '23.80', '20.00', 0, '16.10', '1.20', '731.60', '600.20', '5.00', '1.20', '1107.70', '0.00', 0, 0, '0.80', '0.00'),
-(2021, 90029338, 2, 13, '204.1', 0, 0, '2.10', '0.00', '0.40', '0.80', '1.20', '0.40', 0, '3.70', '1.70', '93.40', '74.70', '0.00', '0.00', '132.70', '0.00', 0, 0, '0.00', '0.00'),
-(2021, 90031009, 11, 24, '737.4', 0, 0, '0.40', '1.70', '0.00', '20.00', '10.30', '12.90', 0, '12.20', '0.00', '412.80', '343.30', '1.70', '0.00', '602.80', '0.00', 0, 0, '0.00', '0.00'),
-(2021, 90033064, 29, 29, '1585.5', 1, 0, '2.50', '2.10', '0.00', '2.10', '14.20', '29.00', 0, '19.30', '0.40', '1159.20', '1024.60', '2.10', '1.70', '1354.30', '0.00', 0, 0, '0.00', '0.40'),
-(2021, 90038408, 29, 31, '1587.5', 1, 1, '0.80', '1.20', '0.00', '123.60', '12.90', '18.00', 0, '11.60', '0.80', '931.90', '779.90', '12.90', '3.30', '1438.70', '0.00', 0, 0, '0.40', '0.40'),
-(2021, 90039317, 21, 24, '1154.0', 3, 1, '12.20', '2.10', '0.00', '3.70', '18.70', '10.90', 0, '33.50', '1.70', '612.40', '495.20', '3.70', '4.10', '863.00', '0.00', 0, 0, '0.00', '0.40'),
-(2021, 90039586, 21, 26, '1259.0', 0, 0, '2.50', '2.10', '0.40', '4.10', '13.50', '22.50', 0, '16.70', '0.00', '827.50', '734.20', '1.70', '2.90', '1003.40', '0.00', 0, 0, '0.00', '0.00'),
-(2021, 90044073, 28, 29, '1496.7', 5, 2, '21.90', '1.20', '0.00', '26.40', '3.30', '10.90', 0, '13.50', '5.00', '481.70', '389.60', '14.20', '6.20', '749.00', '0.00', 0, 0, '0.80', '0.00'),
-(2021, 90044306, 20, 24, '1004.6', 2, 1, '14.20', '0.80', '0.40', '11.60', '4.60', '10.90', 0, '10.90', '1.20', '535.80', '456.60', '14.20', '12.20', '748.30', '0.00', 0, 0, '0.40', '0.00'),
-(2021, 90046019, 23, 30, '1232.0', 4, 1, '14.20', '1.20', '0.00', '19.30', '12.90', '15.50', 0, '19.30', '4.10', '362.60', '274.30', '13.50', '5.40', '612.40', '0.00', 0, 0, '0.40', '0.00'),
-(2021, 90048612, 17, 27, '935.1', 0, 0, '4.10', '2.10', '0.00', '6.20', '20.00', '5.00', 0, '18.70', '0.00', '749.60', '681.40', '3.70', '2.50', '922.90', '0.00', 0, 0, '0.00', '0.00'),
-(2021, 90050972, 0, 0, '0.0', 0, 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, 0, '0.00', '0.00'),
-(2021, 90070012, 0, 5, '85.0', 0, 0, '0.00', '0.00', '0.00', '0.00', '1.70', '3.30', 0, '0.80', '0.00', '45.70', '41.90', '0.00', '0.00', '68.30', '0.00', 0, 0, '0.00', '0.00'),
-(2021, 90070204, 0, 0, '0.0', 0, 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, 0, '0.00', '0.00'),
-(2021, 90071283, 14, 24, '879.1', 0, 0, '0.40', '0.80', '0.00', '4.60', '21.30', '12.90', 0, '15.50', '0.00', '504.90', '438.60', '2.10', '0.80', '680.70', '0.00', 0, 0, '0.00', '0.00'),
-(2021, 90083550, 4, 23, '346.5', 0, 0, '1.20', '0.40', '0.40', '1.70', '0.80', '1.70', 0, '4.60', '0.80', '165.50', '137.20', '2.10', '2.50', '264.70', '0.00', 0, 0, '0.40', '0.00'),
-(2021, 90084404, 3, 13, '214.5', 0, 0, '0.40', '0.00', '0.40', '10.90', '2.90', '1.70', 0, '2.90', '0.00', '166.80', '140.40', '1.70', '0.00', '258.90', '0.00', 0, 0, '0.40', '0.00'),
-(2021, 90085783, 9, 23, '612.4', 0, 0, '0.80', '1.20', '0.00', '0.80', '2.90', '18.00', 0, '10.30', '0.00', '401.90', '349.00', '0.40', '0.80', '503.60', '0.00', 0, 0, '0.00', '0.40'),
-(2021, 90090397, 0, 1, '0.0', 0, 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, 0, '0.00', '0.00'),
-(2021, 90091598, 0, 1, '0.4', 0, 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, 0, '0.00', '0.00'),
-(2021, 90092137, 0, 1, '0.8', 0, 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, '0.00', '0.00', '0.40', '0.40', '0.00', '0.00', '0.40', '0.00', 0, 0, '0.00', '0.00');
-
---
--- Déchargement des données de la table `Avertissement`
---
-
-INSERT INTO `Avertissement` (`match_id`, `joueur_id`, `carton_id`) VALUES
-(30508, 90044073, 2),
-(30508, 90044306, 1),
-(30508, 90048612, 2);
-COMMIT;
+INSERT INTO `stats_joueurs` ('id', `saison_id`, `joueur_id`, `NombreTitularisation`, `NombreMatch`, `Minutes`, `Buts`, `PassesDécisives`, `TirsCadrés`, `CartonJaune`, `CartonRouge`, `Centres`, `TaclesReussis`, `Interceptions`, `ButCSC`, `Fautes`, `HorsJeu`, `Passes`, `PassesReussis`, `CornersGagnés`, `TirsBloqués`, `Touches`, `ArretsGardien`, `ButsEncaissésGardien`, `CleanSheetsGardien`, `PenaltyMarqué`, `PenaltyManqué`) VALUES
+(1, 2021, 90026538, 28, 32, '1606.8', 10, 4, '29.00', '1.70', '0.00', '86.90', '2.10', '2.50', 0, '19.30', '4.10', '595.70', '452.70', '25.10', '6.20', '1013.70', '0.00', 0, 0, '0.80', '0.00'),
+(2, 2021, 90028544, 27, 27, '1494.1', 0, 0, '0.80', '0.00', '0.00', '0.80', '10.90', '16.10', 0, '12.20', '0.00', '966.00', '918.30', '0.40', '0.40', '1116.10', '0.00', 0, 0, '0.00', '0.00'),
+(3, 2021, 90028973, 32, 32, '1854.7', 0, 0, '0.00', '0.40', '0.00', '0.00', '0.80', '0.40', 1, '0.40', '0.00', '535.80', '434.70', '0.00', '0.00', '720.00', '52.20', 20, 5, '0.00', '0.40'),
+(4, 2021, 90028988, 24, 30, '1298.3', 1, 2, '3.70', '2.10', '0.00', '49.60', '23.80', '20.00', 0, '16.10', '1.20', '731.60', '600.20', '5.00', '1.20', '1107.70', '0.00', 0, 0, '0.80', '0.00'),
+(5, 2021, 90029338, 2, 13, '204.1', 0, 0, '2.10', '0.00', '0.40', '0.80', '1.20', '0.40', 0, '3.70', '1.70', '93.40', '74.70', '0.00', '0.00', '132.70', '0.00', 0, 0, '0.00', '0.00'),
+(6, 2021, 90031009, 11, 24, '737.4', 0, 0, '0.40', '1.70', '0.00', '20.00', '10.30', '12.90', 0, '12.20', '0.00', '412.80', '343.30', '1.70', '0.00', '602.80', '0.00', 0, 0, '0.00', '0.00'),
+(7, 2021, 90033064, 29, 29, '1585.5', 1, 0, '2.50', '2.10', '0.00', '2.10', '14.20', '29.00', 0, '19.30', '0.40', '1159.20', '1024.60', '2.10', '1.70', '1354.30', '0.00', 0, 0, '0.00', '0.40'),
+(8, 2021, 90038408, 29, 31, '1587.5', 1, 1, '0.80', '1.20', '0.00', '123.60', '12.90', '18.00', 0, '11.60', '0.80', '931.90', '779.90', '12.90', '3.30', '1438.70', '0.00', 0, 0, '0.40', '0.40'),
+(9, 2021, 90039317, 21, 24, '1154.0', 3, 1, '12.20', '2.10', '0.00', '3.70', '18.70', '10.90', 0, '33.50', '1.70', '612.40', '495.20', '3.70', '4.10', '863.00', '0.00', 0, 0, '0.00', '0.40'),
+(10, 2021, 90039586, 21, 26, '1259.0', 0, 0, '2.50', '2.10', '0.40', '4.10', '13.50', '22.50', 0, '16.70', '0.00', '827.50', '734.20', '1.70', '2.90', '1003.40', '0.00', 0, 0, '0.00', '0.00'),
+(11, 2021, 90044073, 28, 29, '1496.7', 5, 2, '21.90', '1.20', '0.00', '26.40', '3.30', '10.90', 0, '13.50', '5.00', '481.70', '389.60', '14.20', '6.20', '749.00', '0.00', 0, 0, '0.80', '0.00'),
+(12, 2021, 90044306, 20, 24, '1004.6', 2, 1, '14.20', '0.80', '0.40', '11.60', '4.60', '10.90', 0, '10.90', '1.20', '535.80', '456.60', '14.20', '12.20', '748.30', '0.00', 0, 0, '0.40', '0.00'),
+(13, 2021, 90046019, 23, 30, '1232.0', 4, 1, '14.20', '1.20', '0.00', '19.30', '12.90', '15.50', 0, '19.30', '4.10', '362.60', '274.30', '13.50', '5.40', '612.40', '0.00', 0, 0, '0.40', '0.00'),
+(14, 2021, 90048612, 17, 27, '935.1', 0, 0, '4.10', '2.10', '0.00', '6.20', '20.00', '5.00', 0, '18.70', '0.00', '749.60', '681.40', '3.70', '2.50', '922.90', '0.00', 0, 0, '0.00', '0.00'),
+(15, 2021, 90050972, 0, 0, '0.0', 0, 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, 0, '0.00', '0.00'),
+(16, 2021, 90070012, 0, 5, '85.0', 0, 0, '0.00', '0.00', '0.00', '0.00', '1.70', '3.30', 0, '0.80', '0.00', '45.70', '41.90', '0.00', '0.00', '68.30', '0.00', 0, 0, '0.00', '0.00'),
+(17, 2021, 90070204, 0, 0, '0.0', 0, 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, 0, '0.00', '0.00'),
+(18, 2021, 90071283, 14, 24, '879.1', 0, 0, '0.40', '0.80', '0.00', '4.60', '21.30', '12.90', 0, '15.50', '0.00', '504.90', '438.60', '2.10', '0.80', '680.70', '0.00', 0, 0, '0.00', '0.00'),
+(19, 2021, 90083550, 4, 23, '346.5', 0, 0, '1.20', '0.40', '0.40', '1.70', '0.80', '1.70', 0, '4.60', '0.80', '165.50', '137.20', '2.10', '2.50', '264.70', '0.00', 0, 0, '0.40', '0.00'),
+(20, 2021, 90084404, 3, 13, '214.5', 0, 0, '0.40', '0.00', '0.40', '10.90', '2.90', '1.70', 0, '2.90', '0.00', '166.80', '140.40', '1.70', '0.00', '258.90', '0.00', 0, 0, '0.40', '0.00'),
+(21, 2021, 90085783, 9, 23, '612.4', 0, 0, '0.80', '1.20', '0.00', '0.80', '2.90', '18.00', 0, '10.30', '0.00', '401.90', '349.00', '0.40', '0.80', '503.60', '0.00', 0, 0, '0.00', '0.40'),
+(22, 2021, 90090397, 0, 1, '0.0', 0, 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, 0, '0.00', '0.00'),
+(23, 2021, 90091598, 0, 1, '0.4', 0, 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, 0, '0.00', '0.00'),
+(24, 2021, 90092137, 0, 1, '0.8', 0, 0, '0.00', '0.00', '0.00', '0.00', '0.00', '0.00', 0, '0.00', '0.00', '0.40', '0.40', '0.00', '0.00', '0.40', '0.00', 0, 0, '0.00', '0.00');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
