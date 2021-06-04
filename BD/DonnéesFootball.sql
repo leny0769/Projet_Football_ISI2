@@ -27,7 +27,7 @@ USE `Football`;
 -- Déchargement des données de la table `Carton`
 --
 
-INSERT INTO `Carton` (`IDCarton`, `Couleur`) VALUES
+INSERT INTO `Carton` (`Id`, `Couleur`) VALUES
 (1, 'Rouge'),
 (2, 'Jaune');
 
@@ -35,7 +35,7 @@ INSERT INTO `Carton` (`IDCarton`, `Couleur`) VALUES
 -- Déchargement des données de la table `Pays`
 --
 
-INSERT INTO `Pays` (`IDPays`, `Clé`, `Nom`) VALUES
+INSERT INTO `Pays` (`Id`, `Clé`, `Nom`) VALUES
 (1, 'INT', 'World'),
 (2, 'ASI', 'Asia'),
 (3, 'AFR', 'Africa'),
@@ -315,7 +315,7 @@ INSERT INTO `Pays` (`IDPays`, `Clé`, `Nom`) VALUES
 -- Déchargement des données de la table `Saisons`
 --
 
-INSERT INTO `Saisons` (`IDSaison`, `LibelléSaison`) VALUES
+INSERT INTO `Saisons` (`id`, `LibelléSaison`) VALUES
 (2001, '2000/2001'),
 (2002, '2001/2002'),
 (2003, '2002/2003'),
@@ -342,7 +342,7 @@ INSERT INTO `Saisons` (`IDSaison`, `LibelléSaison`) VALUES
 -- Déchargement des données de la table `Stades`
 --
 
-INSERT INTO `Stades` (`IDStade`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`) VALUES
+INSERT INTO `Stades` (`Id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`) VALUES
 (1, 'Vitality Stadium', 'Dean Court, Kings Park', 'Fitness First Stadium', 'Dean Court', 12000),
 (2, 'Emirates Stadium', 'Queensland Road', 'Ashburton Grove', 'The Emirates', 60355),
 (3, 'Villa Park', 'Trinity Road', NULL, NULL, 42788),
@@ -910,7 +910,7 @@ INSERT INTO `Stades` (`IDStade`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capaci
 (566, 'Stadion Arsenal', NULL, 'Stadion Tula Luzhniki', NULL, 20048),
 (567, 'Stadion Gazovik', 'Tsvetnoj bulvar\' 31', NULL, NULL, 4950),
 (568, 'Stadion Trud', 'ul. Belinskogo 15/1', NULL, NULL, 15500);
-INSERT INTO `Stades` (`IDStade`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`) VALUES
+INSERT INTO `Stades` (`stade_id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`) VALUES
 (569, 'Vodafone Arena', 'Dolmabahçe Gazhane Caddesi, Beşiktaş', 'Besiktas Park', NULL, 43500),
 (570, 'Estadio Victoria de Aguascalientes', 'Avenida Manuel Madrigal 101, Colonia Héroes', 'Estadio Victoria', NULL, 25500),
 (571, 'Arena das Dunas', 'Avenida Senador Salgado Filho, Bairro Lagoa Nova', 'Novo Machadão', 'João Cláudio de Vasconcelos Machado', 42623),
@@ -1481,7 +1481,7 @@ INSERT INTO `Stades` (`IDStade`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capaci
 (1136, 'Estadio Municipal Parque Artigas', 'Avenida José Artigas S/N y Blandengues', 'Estadio Artigas', NULL, 5500),
 (1137, 'Navy–Marine Corps Memorial Stadium', '550 Taylor Ave', NULL, NULL, 34000),
 (1138, 'Stade Municipal Jean Rolland', 'Rue des Pommiers Saulniers', NULL, NULL, 2000);
-INSERT INTO `Stades` (`IDStade`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`) VALUES
+INSERT INTO `Stades` (`stade_id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`) VALUES
 (1139, 'Usain Bolt Sports Complex', NULL, 'UWI Paradise Park', NULL, 5000),
 (1140, 'Madinat \'Isa Stadium', 'Demascus Avenue / Road No. 1008, Madinat Isa', 'Khalifa Sports City Stadium', 'Bahrain national Stadium', 20000),
 (1141, 'Stade Didier Pironi', '20 Avenue Descartes', NULL, NULL, 1500),
@@ -2112,7 +2112,7 @@ INSERT INTO `Stades` (`IDStade`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capaci
 (1766, 'The Stan Robinson Stadium', 'Silver Street', NULL, NULL, 1000),
 (1767, 'Langsford Park', NULL, NULL, NULL, 2000),
 (1768, 'The AJN Stadium', 'Bristol Road', NULL, NULL, 1000);
-INSERT INTO `Stades` (`IDStade`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`) VALUES
+INSERT INTO `Stades` (`stade_id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`) VALUES
 (1769, 'Stubbs Lane', 'Stubbs Lane / Hill Farm Lane', NULL, NULL, 1000),
 (1770, 'The Armadillo Stadium', 'Northcourt Road', NULL, NULL, 1500),
 (1771, 'Knaresborough Town AFC Ground', '3 Manse Lane', NULL, NULL, 1000),
@@ -2787,7 +2787,7 @@ INSERT INTO `Stades` (`IDStade`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capaci
 (2440, 'Hayes Lane', 'Hayes Lane, Bromley', 'The Courage Stadium', NULL, 5000),
 (2441, 'Hama Trucks Arena', 'Giltschwertgasse 81', 'Wiener Neustädter Stadion', 'Teddybären- und Plüsch-Stadion', 7700),
 (2442, 'Theyab Awana Stadium', 'Al Khawaneej Street', 'UAE FA Stadium', NULL, 400);
-INSERT INTO `Stades` (`IDStade`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`) VALUES
+INSERT INTO `Stades` (`stade_id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`) VALUES
 (2443, 'Dubai Club Stadium', 'Dubai-Hatta Road, Al Aweer', 'Shabab Al Ahli Dubai Stadium Al Aweer', NULL, 10000),
 (2444, 'Estadio Corona', 'Calzada Ávila Camacho, Colonia Las Carolinas', 'La Casa Del Dolor Ajeno', 'Estadio Moctezuma', 18050),
 (2445, 'Stadio Georgios Kamaras', 'Atheon, Rizoupoli', 'Stadio Rizoupoli G. Kamaras', NULL, 14856),
@@ -2871,7 +2871,7 @@ INSERT INTO `Stades` (`IDStade`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capaci
 -- Déchargement des données de la table `Championnats`
 --
 
-INSERT INTO `Championnats` (`IDSaison`, `IDChampionnat`, `Nom`, `Type`, `Format`, `Clé`, `IDPays`) VALUES
+INSERT INTO `Championnats` (`saison_id`, `championnat_id`, `Nom`, `Type`, `Format`, `Clé`, `pays_id`) VALUES
 (2018, 1, 'Premier League', 'Club', 'Domestic League', 'EPL', 68),
 (2018, 2, 'Bundesliga', 'Club', 'Domestic League', 'DEB', 80),
 (2018, 3, 'UEFA Champions League', 'Club', 'International Cup', 'UCL', 7),
@@ -2945,7 +2945,7 @@ INSERT INTO `Championnats` (`IDSaison`, `IDChampionnat`, `Nom`, `Type`, `Format`
 -- Déchargement des données de la table `Clubs`
 --
 
-INSERT INTO `Clubs` (`IDClub`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `IDStade`) VALUES
+INSERT INTO `Clubs` (`Id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
 (508, 'BOR', 'AFC Bournemouth', 'Association Football Club Bournemouth', 'Bournemouth', 'http://www.afcb.co.uk', '1890', 'Red', 'Black', NULL, 'The Cherries', 'Boscombe', NULL, 'https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/AFC_Bournemouth_%282013%29.svg/241px-AFC_Bournemouth_%282013%29.svg.png', 1),
 (509, 'ARS', 'Arsenal FC', 'Arsenal Football Club', 'London', 'http://www.arsenal.com', '1886', 'Red', 'White', NULL, 'The Gunners', NULL, NULL, 'https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/200px-Arsenal_FC.svg.png', 2),
 (510, 'AST', 'Aston Villa FC', 'Aston Villa Football Club', 'Birmingham', 'http://www.avfc.co.uk', '1872', 'Claret', 'Sky Blue', NULL, 'The Villa', 'The Lions', 'The Claret and Blue', 'https://upload.wikimedia.org/wikipedia/en/2/26/Aston_villa_logo16.png', 3),
@@ -3145,7 +3145,7 @@ INSERT INTO `Clubs` (`IDClub`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, 
 (704, 'NYR', 'New York Red Bulls', 'New York Red Bulls', 'Harrison, NJ', 'http://www.newyorkredbulls.com', '1995', 'Red', 'White', 'Navy Blue', 'Red Bulls', 'RBNY', 'Metro', 'https://upload.wikimedia.org/wikipedia/en/thumb/5/51/New_York_Red_Bulls_logo.svg/283px-New_York_Red_Bulls_logo.svg.png', 190),
 (705, 'ORL', 'Orlando City SC', 'Orlando City Soccer Club', 'Orlando, FL', 'http://www.orlandocitysoccer.com', '2008', 'Purple', 'Gold', NULL, 'The Lions', NULL, NULL, 'https://upload.wikimedia.org/wikipedia/en/thumb/6/6a/Orlando_City_2014.svg/296px-Orlando_City_2014.svg.png', 790),
 (706, 'PHI', 'Philadelphia Union', 'Philadelphia Union', 'Chester, PA', 'http://www.philadelphiaunion.com', '2008', 'Blue', 'Gold', NULL, 'Zolos', 'The U', NULL, 'https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Philadelphia_Union_2010.svg/500px-Philadelphia_Union_2010.svg.png', 192);
-INSERT INTO `Clubs` (`IDClub`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `IDStade`) VALUES
+INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
 (707, 'POR', 'Portland Timbers', 'Portland Timbers', 'Portland, OR', 'http://www.portlandtimbers.com', '2001', 'Green', 'White', 'Yellow', 'The Timbers', NULL, NULL, 'https://upload.wikimedia.org/wikipedia/en/thumb/3/35/Portland_Timbers_logo.svg/220px-Portland_Timbers_logo.svg.png', 193),
 (708, 'RSL', 'Real Salt Lake', 'Real Salt Lake', 'Salt Lake City, UT', 'http://www.realsaltlake.com', '2005', 'Red', 'Royal Blue', 'Yellow', 'Claret and Cobalt', 'Royals', 'La Realeza', 'https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Real_Salt_Lake_2010.svg/240px-Real_Salt_Lake_2010.svg.png', 194),
 (709, 'SJE', 'San Jose Earthquakes', 'San Jose Earthquakes', 'Santa Clara, CA', 'http://www.sjearthquakes.com', '1974', 'Black', 'White', 'Blue', NULL, NULL, NULL, 'https://upload.wikimedia.org/wikipedia/en/thumb/9/98/San_Jose_Earthquakes_2014.svg/500px-San_Jose_Earthquakes_2014.svg.png', 195),
@@ -3392,7 +3392,7 @@ INSERT INTO `Clubs` (`IDClub`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, 
 (950, 'ITA', 'Italy', 'Federazione Italiana Giuoco Calcio', 'Roma', 'http://www.figc.it', '1898', 'Blue', 'White', NULL, 'Gli Azzurri', NULL, NULL, NULL, 152),
 (951, 'NIR', 'Northern Ireland', 'Irish Football Association', 'Belfast', 'http://www.irishfa.com', '1880', 'Green', 'White', NULL, NULL, NULL, NULL, NULL, 355),
 (952, 'POL', 'Poland', 'Polski Zwiazek Pilki Noznej', 'Warszawa', 'http://www.pzpn.pl', '1919', 'White', 'Red', NULL, NULL, NULL, NULL, NULL, 540);
-INSERT INTO `Clubs` (`IDClub`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `IDStade`) VALUES
+INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
 (953, 'PRT', 'Portugal', 'Federação Portuguesa de Futebol', 'Lisboa', 'http://www.fpf.pt', '1914', 'Red', 'Green', NULL, 'A Selecção', 'A Seleção', 'Os Navegadores', NULL, 99),
 (954, 'IRE', 'Republic of Ireland', 'Football Association of Ireland', 'Dublin', 'http://www.fai.ie', '1921', 'Green', 'White', 'Orange', NULL, NULL, NULL, NULL, 203),
 (955, 'ROM', 'Romania', 'Federaţia Română de Fotbal', 'Bucureşti', 'http://www.frf.ro', '1909', 'Yellow', 'Blue', 'Red', NULL, NULL, NULL, NULL, 1008),
@@ -3667,7 +3667,7 @@ INSERT INTO `Clubs` (`IDClub`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, 
 (1224, 'UCA', 'CD Universidad Católica', 'Club Deportivo de la Pontificia Universidad Católica del Ecuador', 'Quito', 'http://www.trencitoazul.com', '1963', 'Dark Blue', 'Light Blue', 'White', 'Camarattas', 'Trencito Azul', 'Celestes', NULL, 408),
 (1225, 'UNC', 'CF Universidad de Chile', 'Corporacion de Futbol Universidad de Chile', 'Santiago', 'http://www.udechile.cl', '1927', 'Blue', 'Red', NULL, NULL, NULL, NULL, NULL, 240),
 (1226, 'ALI', 'Alianza Lima', 'Club Alianza Lima', 'Lima', 'http://www.clubalianzalima.com', '1901', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 988);
-INSERT INTO `Clubs` (`IDClub`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `IDStade`) VALUES
+INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
 (1227, 'BOL', 'Club Bolívar', 'Club Atlético Bolívar', 'La Paz', 'http://www.clubbolivar.com', '1925', 'Light Blue', NULL, NULL, 'La Academia Paceña', 'Los Celestes', NULL, NULL, 407),
 (1228, 'CEP', 'Cerro Porteño', 'Club Cerro Porteño', 'Asunción', 'http://www.clubcerro.com', '1912', 'Red', 'Blue', NULL, NULL, NULL, NULL, NULL, 1019),
 (1229, NULL, 'Club Juan Aurich', 'Club Juan Aurich de la Victoria', 'Chiclayo', 'http://www.juanaurich.net', '1922', 'Red', 'White', NULL, 'El Ciclón del Norte', 'El Manchester del Norte', NULL, NULL, 2262),
@@ -3955,7 +3955,7 @@ INSERT INTO `Clubs` (`IDClub`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, 
 (1511, 'CAT', 'Catania', 'Calcio Catania', 'Catania', 'http://www.calciocatania.it', '1908', 'Sky Blue', 'Red', NULL, 'Etnei', NULL, NULL, NULL, 1308),
 (1512, 'CAM', 'Campodarsego Calcio 1974', 'Campodarsego Calcio 1974', 'Campodarsego', 'http://www.campodarsegocalcio.it', '1974', 'Red', 'White', NULL, NULL, NULL, NULL, NULL, 1309),
 (1513, 'CAR', 'Carrarese', 'Carrarese Calcio 1908', 'Carrara', 'http://www.carraresecalcio.it', '1908', 'Yellow', 'Blue', NULL, 'Azzurri', 'Gialloazzurri', 'Apuani', NULL, 1310);
-INSERT INTO `Clubs` (`IDClub`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `IDStade`) VALUES
+INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
 (1514, 'SUD', 'Südtirol', 'Fußball Club Südtirol', 'Bressanone', 'http://www.fc-suedtirol.com', '1974', 'White', 'Red', NULL, NULL, NULL, NULL, NULL, 1311),
 (1515, 'PIC', 'PS AZ Picerno 1973', 'Polisportiva AZ Picerno 1973', 'Picerno', 'http://www.azpicerno.it', '1973', 'Red', 'Blue', NULL, NULL, NULL, NULL, NULL, 1630),
 (1516, 'MON', 'SS Monopoli', 'Società Sportiva Monopoli 1966', 'Monopoli', 'http://www.monopolicalcio.it', '2003', 'White', 'Green', NULL, 'Gabbiano', NULL, NULL, NULL, 1313),
@@ -4258,7 +4258,7 @@ INSERT INTO `Clubs` (`IDClub`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, 
 (1814, 'NOR', 'Norwich Utd', 'Norwich United Football Club', 'Blofield', 'http://www.norwichunitedfc.com/', '1903', 'Blue', 'Yellow', NULL, NULL, NULL, NULL, NULL, NULL),
 (1815, NULL, 'Nostell Miners', 'Nostell Miners Welfare Football Club', NULL, 'http://www.nostell.com', '1928', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1975),
 (1816, 'OAD', 'Oadby Town', 'Oadby Town Football Club', 'Oadby', 'http://www.pitchero.com/clubs/oadbytown/', '1937', 'Red', 'White', NULL, NULL, NULL, NULL, NULL, NULL);
-INSERT INTO `Clubs` (`IDClub`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `IDStade`) VALUES
+INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
 (1817, 'ODD', 'Odd Down AFC', 'Odd Down Association Football Club', 'Bath, Somerset', NULL, '1901', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 2370),
 (1818, 'OXH', 'Oxhey Jets', 'Oxhey Jets Football Club', 'South Oxhey', 'http://www.oxheyjets.com', '1972', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1739),
 (1819, 'PAD', 'Padiham', 'Padiham Football Club', 'Padiham', 'http://www.pitchero.com/clubs/padihamfc', '1878', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 2090),
@@ -4554,7 +4554,7 @@ INSERT INTO `Clubs` (`IDClub`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, 
 (2109, 'HAR', 'Harrow Borough', 'Harrow Borough Football Club', 'London', 'http://www.harrowboro.com', '1933', 'Red', 'White', NULL, NULL, NULL, NULL, NULL, 1855),
 (2110, 'HAR', 'Hartlepool Utd', 'Hartlepool United Football Club', 'Hartlepool', 'http://www.hartlepoolunited.co.uk', '1908', 'Blue', 'White', NULL, 'Pools', 'Monkey Hangers', NULL, NULL, 1856),
 (2111, 'HAR', 'Hartley', 'Hartley Wintney Football Club', 'Hartley Wintney', 'http://www.pitchero.com/clubs/hartleywintney/', '1897', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1857);
-INSERT INTO `Clubs` (`IDClub`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `IDStade`) VALUES
+INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
 (2112, 'HAS', 'Hastings Utd', 'Hastings United Football Club', 'Hastings, Sussex', 'http://www.hastingsunitedfc.co.uk', '1894', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 2043),
 (2113, 'HAV', 'Havant & Water', 'Havant & Waterlooville Football Club', 'Havant', 'https://www.havantandwaterloovillefc.co.uk', '1998', 'Yellow', 'Blue', NULL, 'The Hawks', NULL, NULL, NULL, 1858),
 (2114, NULL, 'Haverhill Borough FC', 'Haverhill Borough Football Club', 'Haverhill, Suffolk', 'http://www.pitchero.com/clubs/haverhillboroughfc', '2011', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
@@ -4850,7 +4850,7 @@ INSERT INTO `Clubs` (`IDClub`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, 
 (2404, 'BEN', 'Benfleet', 'Benfleet Football Club', 'Benfleet, Essex', NULL, '1922', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (2405, 'BEW', 'Bewdley Town', NULL, NULL, 'http://www.bewdleytownfootballclub.com', '1978', NULL, NULL, NULL, NULL, NULL, NULL, NULL, 2405),
 (2406, 'BLA', 'Blackstones', 'Blackstones Football Club', 'Stamford', NULL, '1891', 'Black', 'Green', NULL, NULL, NULL, NULL, NULL, 4);
-INSERT INTO `Clubs` (`IDClub`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `IDStade`) VALUES
+INSERT INTO `Clubs` (`club_id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `DateFondation`, `Couleur1`, `Couleur2`, `Couleur3`, `Surnom1`, `Surnom2`, `Surnom3`, `LogoURL`, `stade_id`) VALUES
 (2407, 'BRO', 'Brocton FC', NULL, NULL, 'http://www.broctonfc.com', '1937', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
 (2408, 'BUR', 'Burton Park', 'Burton Park Wanderers Football Club', 'Burton Latimer, Northamptonshire', NULL, '1961', 'Black', 'Blue', NULL, NULL, NULL, NULL, NULL, NULL),
 (2409, 'CAM', 'Cammell Laird', 'Cammell Laird Football Club', 'Birkenhead', NULL, '1889', NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL),
@@ -4938,7 +4938,7 @@ INSERT INTO `Clubs` (`IDClub`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, 
 -- Déchargement des données de la table `Championnats_Clubs`
 --
 
-INSERT INTO `Championnats_Clubs` (`IDSaison`, `IDChampionnat`, `IDClub`) VALUES
+INSERT INTO `Championnats_Clubs` (`saison_id`, `championnat_id`, `club_id`) VALUES
 (2019, 13, 549),
 (2019, 13, 597),
 (2019, 13, 600),
@@ -5004,7 +5004,7 @@ INSERT INTO `Championnats_Clubs` (`IDSaison`, `IDChampionnat`, `IDClub`) VALUES
 -- Déchargement des données de la table `Joueurs`
 --
 
-INSERT INTO `Joueurs` (`IDJoueur`, `Prénom`, `Nom`, `Poste`, `PiedFort`, `Taille`, `Poids`, `DateNaissance`, `VilleNaissance`, `Nationalité`, `PhotoURL`, `TypeJoueur`) VALUES
+INSERT INTO `Joueurs` (`Id`, `Prénom`, `Nom`, `Poste`, `PiedFort`, `Taille`, `Poids`, `DateNaissance`, `VilleNaissance`, `Nationalité`, `PhotoURL`, `TypeJoueur`) VALUES
 (90000001, 'Juninho', 'Pernambucano', 'M', 'Left', 179, 71, '1975-01-30', 'Recife', 'Brazil', 'https://fmdataba.com/images/p2/275547.png', 'R'),
 (90000002, 'Grégory', 'Coupet', 'GK', 'Right', 181, 80, '1972-12-31', 'Le Puy-en-Velay', 'France', 'https://sortitoutsi.net/uploads/face/12433.png', 'R'),
 (90000003, 'Cristiano Marques', 'Gomes', 'D', 'Right', 183, 77, '1977-06-03', 'Guarulhos', 'Brazil', 'https://www.ol.fr/-/media/project/olg/olweb/people/staff-members/portraits/2018/07/11/258.jpg?h=1200&la=fr-FR&w=900&rev=73cf80705f4342a692cb21788b75c37a', 'R'),
@@ -5043,52 +5043,52 @@ INSERT INTO `Joueurs` (`IDJoueur`, `Prénom`, `Nom`, `Poste`, `PiedFort`, `Taill
 -- Déchargement des données de la table `JoueursEnActivité`
 --
 
-UPDATE JoueursEnActivité SET Numéro = 10, IDClub = 597 WHERE IDJoueur = 90026538;
-UPDATE JoueursEnActivité SET Numéro = 5, IDClub = 597 WHERE IDJoueur = 90028544;
-UPDATE JoueursEnActivité SET Numéro = 1, IDClub = 597 WHERE IDJoueur = 90028973;
-UPDATE JoueursEnActivité SET Numéro = 27, IDClub = 597 WHERE IDJoueur = 90028988;
-UPDATE JoueursEnActivité SET Numéro = 20, IDClub = 597 WHERE IDJoueur = 90029338;
-UPDATE JoueursEnActivité SET Numéro = 22, IDClub = 597 WHERE IDJoueur = 90031009;
-UPDATE JoueursEnActivité SET Numéro = 6, IDClub = 597 WHERE IDJoueur = 90033064;
-UPDATE JoueursEnActivité SET Numéro = 14, IDClub = 597 WHERE IDJoueur = 90038408;
-UPDATE JoueursEnActivité SET Numéro = 12, IDClub = 597 WHERE IDJoueur = 90039317;
-UPDATE JoueursEnActivité SET Numéro = 23, IDClub = 597 WHERE IDJoueur = 90039586;
-UPDATE JoueursEnActivité SET Numéro = 7, IDClub = 597 WHERE IDJoueur = 90044073;
-UPDATE JoueursEnActivité SET Numéro = 8, IDClub = 597 WHERE IDJoueur = 90044306;
-UPDATE JoueursEnActivité SET Numéro = 11, IDClub = 597 WHERE IDJoueur = 90046019;
-UPDATE JoueursEnActivité SET Numéro = 39, IDClub = 597 WHERE IDJoueur = 90048612;
-UPDATE JoueursEnActivité SET Numéro = 30, IDClub = 597 WHERE IDJoueur = 90050972;
-UPDATE JoueursEnActivité SET Numéro = 3, IDClub = 597 WHERE IDJoueur = 90070012;
-UPDATE JoueursEnActivité SET Numéro = 40, IDClub = 597 WHERE IDJoueur = 90070204;
-UPDATE JoueursEnActivité SET Numéro = 25, IDClub = 597 WHERE IDJoueur = 90071283;
-UPDATE JoueursEnActivité SET Numéro = 18, IDClub = 597 WHERE IDJoueur = 90083550;
-UPDATE JoueursEnActivité SET Numéro = 26, IDClub = 597 WHERE IDJoueur = 90084404;
-UPDATE JoueursEnActivité SET Numéro = 2, IDClub = 597 WHERE IDJoueur = 90085783;
-UPDATE JoueursEnActivité SET Numéro = 19, IDClub = 597 WHERE IDJoueur = 90088465;
-UPDATE JoueursEnActivité SET Numéro = NULL, IDClub = 597 WHERE IDJoueur = 90088502;
-UPDATE JoueursEnActivité SET Numéro = 17, IDClub = 597 WHERE IDJoueur = 90090397;
-UPDATE JoueursEnActivité SET Numéro = 29, IDClub = 597 WHERE IDJoueur = 90091598;
-UPDATE JoueursEnActivité SET Numéro = 28, IDClub = 597 WHERE IDJoueur = 90092137;
-UPDATE JoueursEnActivité SET Numéro = 15, IDClub = 597 WHERE IDJoueur = 90092731;
+UPDATE JoueursEnActivité SET Numéro = 10, club_id = 597 WHERE joueur_id = 90026538;
+UPDATE JoueursEnActivité SET Numéro = 5, club_id = 597 WHERE joueur_id = 90028544;
+UPDATE JoueursEnActivité SET Numéro = 1, club_id = 597 WHERE joueur_id = 90028973;
+UPDATE JoueursEnActivité SET Numéro = 27, club_id = 597 WHERE joueur_id = 90028988;
+UPDATE JoueursEnActivité SET Numéro = 20, club_id = 597 WHERE joueur_id = 90029338;
+UPDATE JoueursEnActivité SET Numéro = 22, club_id = 597 WHERE joueur_id = 90031009;
+UPDATE JoueursEnActivité SET Numéro = 6, club_id = 597 WHERE joueur_id = 90033064;
+UPDATE JoueursEnActivité SET Numéro = 14, club_id = 597 WHERE joueur_id = 90038408;
+UPDATE JoueursEnActivité SET Numéro = 12, club_id = 597 WHERE joueur_id = 90039317;
+UPDATE JoueursEnActivité SET Numéro = 23, club_id = 597 WHERE joueur_id = 90039586;
+UPDATE JoueursEnActivité SET Numéro = 7, club_id = 597 WHERE joueur_id = 90044073;
+UPDATE JoueursEnActivité SET Numéro = 8, club_id = 597 WHERE joueur_id = 90044306;
+UPDATE JoueursEnActivité SET Numéro = 11, club_id = 597 WHERE joueur_id = 90046019;
+UPDATE JoueursEnActivité SET Numéro = 39, club_id = 597 WHERE joueur_id = 90048612;
+UPDATE JoueursEnActivité SET Numéro = 30, club_id = 597 WHERE joueur_id = 90050972;
+UPDATE JoueursEnActivité SET Numéro = 3, club_id = 597 WHERE joueur_id = 90070012;
+UPDATE JoueursEnActivité SET Numéro = 40, club_id = 597 WHERE joueur_id = 90070204;
+UPDATE JoueursEnActivité SET Numéro = 25, club_id = 597 WHERE joueur_id = 90071283;
+UPDATE JoueursEnActivité SET Numéro = 18, club_id = 597 WHERE joueur_id = 90083550;
+UPDATE JoueursEnActivité SET Numéro = 26, club_id = 597 WHERE joueur_id = 90084404;
+UPDATE JoueursEnActivité SET Numéro = 2, club_id = 597 WHERE joueur_id = 90085783;
+UPDATE JoueursEnActivité SET Numéro = 19, club_id = 597 WHERE joueur_id = 90088465;
+UPDATE JoueursEnActivité SET Numéro = NULL, club_id = 597 WHERE joueur_id = 90088502;
+UPDATE JoueursEnActivité SET Numéro = 17, club_id = 597 WHERE joueur_id = 90090397;
+UPDATE JoueursEnActivité SET Numéro = 29, club_id = 597 WHERE joueur_id = 90091598;
+UPDATE JoueursEnActivité SET Numéro = 28, club_id = 597 WHERE joueur_id = 90092137;
+UPDATE JoueursEnActivité SET Numéro = 15, club_id = 597 WHERE joueur_id = 90092731;
 
 
 --
 -- Déchargement des données de la table `JoueursRetraite`
 --
 
-UPDATE JoueursRetraite SET FinCarriere = '2014-01-30' WHERE IDJoueur = 90000001;
-UPDATE JoueursRetraite SET FinCarriere = '2011-05-29' WHERE IDJoueur = 90000002;
-UPDATE JoueursRetraite SET FinCarriere = '2014-01-01' WHERE IDJoueur = 90000003;
-UPDATE JoueursRetraite SET FinCarriere = '2007-06-11' WHERE IDJoueur = 90000004;
-UPDATE JoueursRetraite SET FinCarriere = '2012-01-01' WHERE IDJoueur = 90000005;
-UPDATE JoueursRetraite SET FinCarriere = '2021-04-18' WHERE IDJoueur = 90000006;
+UPDATE JoueursRetraite SET FinCarriere = '2014-01-30' WHERE joueur_id = 90000001;
+UPDATE JoueursRetraite SET FinCarriere = '2011-05-29' WHERE joueur_id = 90000002;
+UPDATE JoueursRetraite SET FinCarriere = '2014-01-01' WHERE joueur_id = 90000003;
+UPDATE JoueursRetraite SET FinCarriere = '2007-06-11' WHERE joueur_id = 90000004;
+UPDATE JoueursRetraite SET FinCarriere = '2012-01-01' WHERE joueur_id = 90000005;
+UPDATE JoueursRetraite SET FinCarriere = '2021-04-18' WHERE joueur_id = 90000006;
 
 
 --
 -- Déchargement des données de la table `Matchs`
 --
 
-INSERT INTO `Matchs` (`IDMatch`, `DateMatch`, `ButEquipeExterieur`, `ButEquipeDomicile`, `IDClubExterieur`, `IDClubDomicile`, `IDStade`, `IDSaison`, `IDChampionnat`) VALUES
+INSERT INTO `Matchs` (`Id`, `DateMatch`, `ButEquipeExterieur`, `ButEquipeDomicile`, `club_idExterieur`, `club_idDomicile`, `stade_id`, `saison_id`, `championnat_id`) VALUES
 (3013, '2020-10-25T14:00:00', 6, '0', 904, 900, 232, 2021, 13),
 (30508, '2020-09-15T19:00:00', 2, '3', 597, 900, 232, 2021, 13),
 (30509, '2020-09-16T19:00:00', 0, '2', 940, 600, 90, 2021, 13),
@@ -5475,7 +5475,7 @@ INSERT INTO `Matchs` (`IDMatch`, `DateMatch`, `ButEquipeExterieur`, `ButEquipeDo
 -- Déchargement des données de la table `Stats_Joueurs`
 --
 
-INSERT INTO `Stats_Joueurs` (`IDSaison`, `IDJoueur`, `NombreTitularisation`, `NombreMatch`, `Minutes`, `Buts`, `PassesDécisives`, `TirsCadrés`, `CartonJaune`, `CartonRouge`, `Centres`, `TaclesReussis`, `Interceptions`, `ButCSC`, `Fautes`, `HorsJeu`, `Passes`, `PassesReussis`, `CornersGagnés`, `TirsBloqués`, `Touches`, `ArretsGardien`, `ButsEncaissésGardien`, `CleanSheetsGardien`, `PenaltyMarqué`, `PenaltyManqué`) VALUES
+INSERT INTO `Stats_Joueurs` (`saison_id`, `joueur_id`, `NombreTitularisation`, `NombreMatch`, `Minutes`, `Buts`, `PassesDécisives`, `TirsCadrés`, `CartonJaune`, `CartonRouge`, `Centres`, `TaclesReussis`, `Interceptions`, `ButCSC`, `Fautes`, `HorsJeu`, `Passes`, `PassesReussis`, `CornersGagnés`, `TirsBloqués`, `Touches`, `ArretsGardien`, `ButsEncaissésGardien`, `CleanSheetsGardien`, `PenaltyMarqué`, `PenaltyManqué`) VALUES
 (2021, 90026538, 28, 32, '1606.8', 10, 4, '29.00', '1.70', '0.00', '86.90', '2.10', '2.50', 0, '19.30', '4.10', '595.70', '452.70', '25.10', '6.20', '1013.70', '0.00', 0, 0, '0.80', '0.00'),
 (2021, 90028544, 27, 27, '1494.1', 0, 0, '0.80', '0.00', '0.00', '0.80', '10.90', '16.10', 0, '12.20', '0.00', '966.00', '918.30', '0.40', '0.40', '1116.10', '0.00', 0, 0, '0.00', '0.00'),
 (2021, 90028973, 32, 32, '1854.7', 0, 0, '0.00', '0.40', '0.00', '0.00', '0.80', '0.40', 1, '0.40', '0.00', '535.80', '434.70', '0.00', '0.00', '720.00', '52.20', 20, 5, '0.00', '0.40'),
@@ -5505,7 +5505,7 @@ INSERT INTO `Stats_Joueurs` (`IDSaison`, `IDJoueur`, `NombreTitularisation`, `No
 -- Déchargement des données de la table `Avertissement`
 --
 
-INSERT INTO `Avertissement` (`IDMatch`, `IDJoueur`, `IDCarton`) VALUES
+INSERT INTO `Avertissement` (`match_id`, `joueur_id`, `carton_id`) VALUES
 (30508, 90044073, 2),
 (30508, 90044306, 1),
 (30508, 90048612, 2);
