@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Pays;
+use App\Models\Championnat;
 use Illuminate\Http\Request;
 
 class PaysController extends Controller
@@ -14,7 +15,8 @@ class PaysController extends Controller
      */
     public function index()
     {
-        //
+        $pays = Pays::all();
+        return view('index',compact('pays'));
     }
 
     /**
@@ -46,7 +48,8 @@ class PaysController extends Controller
      */
     public function show(Pays $pays)
     {
-        //
+        $championnats = $pays->championnats;
+        return view('championnats',compact('championnats'));
     }
 
     /**

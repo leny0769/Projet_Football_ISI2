@@ -8,4 +8,18 @@ use Illuminate\Database\Eloquent\Model;
 class Championnat extends Model
 {
     use HasFactory;
+
+    public $timestamps = false;
+    protected $fillable = [
+        'id',
+        'saison_id',
+        'Nom',
+        'Type',
+        'Format',
+        'Clé'
+    ];
+
+    public function pays(){
+        return $this->belongsTo(Pays::class);
+    }
 }

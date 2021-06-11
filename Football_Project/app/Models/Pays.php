@@ -8,4 +8,16 @@ use Illuminate\Database\Eloquent\Model;
 class Pays extends Model
 {
     use HasFactory;
+
+    public $table = 'pays';
+    public $timestamps = false;
+    protected $fillable = [
+        'id',
+        'Clé',
+        'Nom'
+    ];
+
+    public function championnats(){
+        return $this->hasMany(Championnat::class);
+    }
 }
