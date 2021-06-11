@@ -28,7 +28,7 @@ class CreateClubsTable extends Migration
             $table->text('Surnom2');
             $table->text('Surnom3');
             $table->text('LogoURL');
-            $table->unsignedBigInteger('stade_id');
+            $table->unsignedBigInteger('stade_id')->nullable();
             $table->foreign('stade_id')
                 ->references('id')
                 ->on('stades')

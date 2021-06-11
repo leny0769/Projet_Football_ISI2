@@ -36,12 +36,6 @@ class CreateMatchsTable extends Migration
                 ->on('stades')
                 ->onDelete('cascade')
                 ->onUpdate('cascade');
-            $table->unsignedBigInteger('saison_id');
-            $table->foreign('saison_id')
-                ->references('id')
-                ->on('saisons')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
             $table->unsignedBigInteger('championnat_id');
             $table->foreign('championnat_id')
                 ->references('id')

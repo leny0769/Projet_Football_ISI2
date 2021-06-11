@@ -13,14 +13,8 @@ class CreateChampionnatsClubsTable extends Migration
      */
     public function up()
     {
-        Schema::create('championnats__clubs', function (Blueprint $table) {
+        Schema::create('championnats_clubs', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('saison_id');
-            $table->foreign('saison_id')
-                ->references('id')
-                ->on('saisons')
-                ->onDelete('cascade')
-                ->onUpdate('cascade');
             $table->unsignedBigInteger('championnat_id');
             $table->foreign('championnat_id')
                 ->references('id')
