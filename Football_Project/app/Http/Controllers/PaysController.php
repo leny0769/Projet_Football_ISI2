@@ -6,6 +6,8 @@ use App\Models\Pays;
 use App\Models\Championnat;
 use Illuminate\Http\Request;
 
+use DB;
+
 class PaysController extends Controller
 {
     /**

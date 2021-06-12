@@ -12,7 +12,6 @@ class Pays extends Model
     public $table = 'pays';
     public $timestamps = false;
     protected $fillable = [
-        'id',
         'Clé',
         'Nom'
     ];

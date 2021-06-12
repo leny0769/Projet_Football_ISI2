@@ -11,7 +11,6 @@ class Championnat extends Model
 
     public $timestamps = false;
     protected $fillable = [
-        'id',
         'saison_id',
         'Nom',
         'Type',

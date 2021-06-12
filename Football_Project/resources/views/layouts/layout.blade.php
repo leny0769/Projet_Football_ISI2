@@ -31,6 +31,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="">TEAMS</a></li>
                                 <li><a class="dropdown-item" href="">PLAYERS</a></li>
+                                <li><a class="dropdown-item" href="{{ url('/championnats') }}">CHAMPIONNATS</a></li>
                             </ul>
                         </li>
                     </ul>

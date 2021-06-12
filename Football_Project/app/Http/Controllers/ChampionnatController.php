@@ -15,6 +15,8 @@ class ChampionnatController extends Controller
     public function index()
     {
         //
+        $championnats = Championnat::all();
+        return view('indexChampionnats', compact('championnats'));
     }
 
     /**
