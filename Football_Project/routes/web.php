@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaysController;
 use App\Http\Controllers\ChampionnatController;
+use App\Http\Controllers\ClubController;
+use App\Http\Controllers\JoueurController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +24,5 @@ Route::get('/', function () {
 
 Route::resource('pays',PaysController::class);
 Route::resource('championnats',ChampionnatController::class);
+Route::resource('clubs',ClubController::class);
+Route::resource('joueurs',JoueurController::class);

@@ -13,7 +13,8 @@ class Pays extends Model
     public $timestamps = false;
     protected $fillable = [
         'Clé',
-        'Nom'
+        'Nom',
+        'DrapeauURL'
     ];
 
     public function championnats(){

@@ -5,18 +5,18 @@
 @endpush
 
 @section('titrePage')
-    Championnats
+    Joueurs
 @endsection
 
 
 @section('contenu')
     <div class="container">
         <div class="row justify-content-md-center">
-        @foreach($championnats as $c)
-            <div class="card col-md-auto me-2 mb-2" style="width: 20rem;">
+        @foreach($joueurs as $j)
+            <div class="card col-md-auto me-2 mb-2" style="width: 10rem;">
+                <img class="card-img-top" src="{{ $j->PhotoURL }}" alt="">
                 <div class="card-body">
-                    <h5 class="card-title">{{ $c->Nom }}</h5>
-                    <p class="card-text">{{ $c->Format }}</p>
+                    <h5 class="card-title">{{ $j->Nom }} {{ $j->Prénom }}</h5>
                     <a class="btn btn-primary" href="">Voir</a>
                 </div>
             </div>

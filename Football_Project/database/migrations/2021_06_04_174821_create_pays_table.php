@@ -17,6 +17,7 @@ class CreatePaysTable extends Migration
             $table->id();
             $table->text('Clé');
             $table->text('Nom');
+            $table->text('URLDrapeau');
             $table->timestamps();
         });
     }
