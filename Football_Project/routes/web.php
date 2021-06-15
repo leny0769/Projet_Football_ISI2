@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PaysController;
+use App\Http\Controllers\PayController;
 use App\Http\Controllers\ChampionnatController;
 use App\Http\Controllers\ClubController;
 use App\Http\Controllers\JoueurController;
@@ -22,7 +22,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::resource('pays',PaysController::class);
+Route::resource('pay',PayController::class);
 Route::resource('championnats',ChampionnatController::class);
 Route::resource('clubs',ClubController::class);
 Route::resource('joueurs',JoueurController::class);

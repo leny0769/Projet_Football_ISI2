@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Stats_Joueurs extends Model
 {
     use HasFactory;
+
+    public function joueurs(){
+        return $this->belongsTo(Joueur::class);
+    }
 }

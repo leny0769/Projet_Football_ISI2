@@ -47,7 +47,8 @@ class JoueurController extends Controller
      */
     public function show(Joueur $joueur)
     {
-        //
+        $stats = $joueur->stats;
+        return view('stats',compact('stats','joueur'));
     }
 
     /**

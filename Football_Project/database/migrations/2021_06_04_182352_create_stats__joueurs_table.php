@@ -13,7 +13,7 @@ class CreateStatsJoueursTable extends Migration
      */
     public function up()
     {
-        Schema::create('stats_joueurs', function (Blueprint $table) {
+        Schema::create('stats__joueurs', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('saison_id');
             $table->foreign('saison_id')

@@ -17,7 +17,7 @@
                 <img class="card-img-top" src="{{ $p->URLDrapeau }}" alt="">
                 <div class="card-body">
                     <h5 class="card-title">{{ $p->Nom }}</h5>
-                    <a class="btn btn-primary" href="{{ route('pays.show', $p->id) }}">Voir</a>
+                    <a class="btn btn-primary" href="{{route('pay.show',$p->id)}}">Voir</a>
                 </div>
             </div>
         @endforeach

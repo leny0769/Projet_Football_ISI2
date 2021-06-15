@@ -25,8 +25,8 @@ class CreateChampionnatsTable extends Migration
             $table->text('Type');
             $table->text('Format');
             $table->text('Clé');
-            $table->unsignedBigInteger('pays_id');
-            $table->foreign('pays_id')
+            $table->unsignedBigInteger('pay_id');
+            $table->foreign('pay_id')
                 ->references('id')
                 ->on('pays')
                 ->onDelete('cascade')

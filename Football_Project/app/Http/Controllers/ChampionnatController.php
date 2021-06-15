@@ -47,7 +47,8 @@ class ChampionnatController extends Controller
      */
     public function show(Championnat $championnat)
     {
-        //
+        $clubs = $championnat->clubs;
+        return view('clubs',compact('clubs'));
     }
 
     /**

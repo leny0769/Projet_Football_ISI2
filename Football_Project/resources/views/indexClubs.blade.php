@@ -17,7 +17,7 @@
                 <img class="card-img-top" src="{{ $c->LogoURL }} " alt="">
                 <div class="card-body">
                     <h5 class="card-title">{{ $c->Nom }}</h5>
-                    <a class="btn btn-primary" href="">Voir</a>
+                    <a class="btn btn-primary" href="{{route('clubs.show',$c->id)}}">Voir</a>
                 </div>
             </div>
         @endforeach

@@ -2,10 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Championnats_Clubs;
+use App\Models\Pay;
+use App\Models\Championnat;
 use Illuminate\Http\Request;
+use resources\views;
 
-class ChampionnatsClubsController extends Controller
+use DB;
+
+class PayController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +18,8 @@ class ChampionnatsClubsController extends Controller
      */
     public function index()
     {
-        //
+        $pays = Pay::all();
+        return view('index',compact('pays'));
     }
 
     /**
@@ -41,21 +46,22 @@ class ChampionnatsClubsController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Championnats_Clubs  $championnats_Clubs
+     * @param  \App\Models\Pay  $pay
      * @return \Illuminate\Http\Response
      */
-    public function show(Championnats_Clubs $championnats_Clubs)
+    public function show(Pay $pay)
     {
-        //
+        $championnats = $pay->championnats;
+        return view('championnats',compact('championnats'));
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Championnats_Clubs  $championnats_Clubs
+     * @param  \App\Models\Pay  $pay
      * @return \Illuminate\Http\Response
      */
-    public function edit(Championnats_Clubs $championnats_Clubs)
+    public function edit(Pay $pay)
     {
         //
     }
@@ -64,10 +70,10 @@ class ChampionnatsClubsController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Championnats_Clubs  $championnats_Clubs
+     * @param  \App\Models\Pay  $pay
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Championnats_Clubs $championnats_Clubs)
+    public function update(Request $request, Pay $pay)
     {
         //
     }
@@ -75,10 +81,10 @@ class ChampionnatsClubsController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Championnats_Clubs  $championnats_Clubs
+     * @param  \App\Models\Pay  $pay
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Championnats_Clubs $championnats_Clubs)
+    public function destroy(Pay $pay)
     {
         //
     }

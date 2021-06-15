@@ -47,7 +47,9 @@ class ClubController extends Controller
      */
     public function show(Club $club)
     {
-        //
+        //var_dump($championnats);
+        $joueurs = $club->joueurs;
+        return view('joueurs',compact('joueurs'));
     }
 
     /**

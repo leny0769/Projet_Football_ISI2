@@ -10,16 +10,13 @@ class Championnat extends Model
     use HasFactory;
 
     public $timestamps = false;
-    protected $fillable = [
-        'saison_id',
-        'Nom',
-        'Type',
-        'Format',
-        'Clé'
-    ];
 
     public function pays(){
         return $this->belongsTo(Pays::class);
     }
 
+    public function clubs()
+    {
+        return $this->belongsToMany(Club::class);
+    }
 }

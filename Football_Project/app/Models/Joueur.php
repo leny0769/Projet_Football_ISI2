@@ -24,4 +24,12 @@ class Joueur extends Model
         'TypeJoueur',
         'Numéro'
     ];
+
+    public function clubs(){
+        return $this->belongsTo(Club::class);
+    }
+
+    public function stats(){
+        return $this->hasMany(Stats_Joueurs::class);
+    }
 }

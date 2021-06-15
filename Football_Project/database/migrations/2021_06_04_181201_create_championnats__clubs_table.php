@@ -13,7 +13,7 @@ class CreateChampionnatsClubsTable extends Migration
      */
     public function up()
     {
-        Schema::create('championnats_clubs', function (Blueprint $table) {
+        Schema::create('championnat_club', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('championnat_id');
             $table->foreign('championnat_id')

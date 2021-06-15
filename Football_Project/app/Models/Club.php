@@ -26,4 +26,13 @@ class Club extends Model
         'LogoURL',
         'stade_id'
     ];
+
+    public function joueurs(){
+        return $this->hasMany(Joueur::class);
+    }
+
+    public function championnats()
+    {
+        return $this->belongsToMany(Championnat::class);
+    }
 }
