@@ -27,7 +27,7 @@ USE `Football`;
 -- Déchargement des données de la table `Pays`
 --
 
-INSERT INTO `pay` (`Id`, `Clé`, `Nom`, `URLDrapeau`) VALUES
+INSERT INTO `pays` (`Id`, `Clé`, `Nom`, `URLDrapeau`) VALUES
 (16, 'ARG', 'Argentina', 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/langfr-225px-Flag_of_Argentina.svg.png'),
 (19, 'AUS', 'Australia', 'https://www.countryflags.com/wp-content/uploads/australia-flag-png-xl.png'),
 (35, 'BRA', 'Brazil', 'https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png'),
