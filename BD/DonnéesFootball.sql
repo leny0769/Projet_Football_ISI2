@@ -27,7 +27,7 @@ USE `Football`;
 -- Déchargement des données de la table `Pays`
 --
 
-INSERT INTO `pays` (`Id`, `Clé`, `Nom`, `URLDrapeau`) VALUES
+INSERT INTO `pay` (`Id`, `Clé`, `Nom`, `URLDrapeau`) VALUES
 (16, 'ARG', 'Argentina', 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/langfr-225px-Flag_of_Argentina.svg.png'),
 (19, 'AUS', 'Australia', 'https://www.countryflags.com/wp-content/uploads/australia-flag-png-xl.png'),
 (35, 'BRA', 'Brazil', 'https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png'),
@@ -2601,7 +2601,7 @@ INSERT INTO `stades` (`Id`, `Nom`, `Adresse`, `Surnom1`, `Surnom2`, `Capacité`)
 -- Déchargement des données de la table `Championnats`
 --
 
-INSERT INTO `championnats` (`id`, `saison_id`, `Nom`, `Type`, `Format`, `Clé`, `pays_id`) VALUES
+INSERT INTO `championnats` (`id`, `saison_id`, `Nom`, `Type`, `Format`, `Clé`, `pay_id`) VALUES
 (1, 2018, 'Premier League', 'Club', 'Domestic League', 'EPL', 68),
 (2, 2018, 'Bundesliga', 'Club', 'Domestic League', 'DEB', 80),
 (4, 2018, 'Primera Division', 'Club', 'Domestic League', 'ESP', 176),
@@ -4638,7 +4638,7 @@ INSERT INTO `clubs` (`Id`, `Clé`, `Nom`, `NomComplet`, `Ville`, `SiteWeb`, `Dat
 -- Déchargement des données de la table `Championnats_Clubs`
 --
 
-INSERT INTO `championnats_clubs` (`championnat_id`, `club_id`) VALUES
+INSERT INTO `championnat_club` (`championnat_id`, `club_id`) VALUES
 (19, 549),
 (19, 597),
 (19, 600),
@@ -5130,7 +5130,7 @@ INSERT INTO `matchs` (`id`, `DateMatch`, `ButEquipeExterieur`, `ButEquipeDomicil
 -- Déchargement des données de la table `Stats_Joueurs`
 --
 
-INSERT INTO `stats_joueurs` (`id`, `saison_id`, `joueur_id`, `NombreTitularisation`, `NombreMatch`, `Minutes`, `Buts`, `PassesDécisives`, `TirsCadrés`, `CartonJaune`, `CartonRouge`, `Centres`, `TaclesReussis`, `Interceptions`, `ButCSC`, `Fautes`, `HorsJeu`, `Passes`, `PassesReussis`, `CornersGagnés`, `TirsBloqués`, `Touches`, `ArretsGardien`, `ButsEncaissésGardien`, `CleanSheetsGardien`, `PenaltyMarqué`, `PenaltyManqué`) VALUES
+INSERT INTO `stats__joueurs` (`id`, `saison_id`, `joueur_id`, `NombreTitularisation`, `NombreMatch`, `Minutes`, `Buts`, `PassesDécisives`, `TirsCadrés`, `CartonJaune`, `CartonRouge`, `Centres`, `TaclesReussis`, `Interceptions`, `ButCSC`, `Fautes`, `HorsJeu`, `Passes`, `PassesReussis`, `CornersGagnés`, `TirsBloqués`, `Touches`, `ArretsGardien`, `ButsEncaissésGardien`, `CleanSheetsGardien`, `PenaltyMarqué`, `PenaltyManqué`) VALUES
 (1, 2021, 90026538, 28, 32, '1606.8', 10, 4, '29.00', '1.70', '0.00', '86.90', '2.10', '2.50', 0, '19.30', '4.10', '595.70', '452.70', '25.10', '6.20', '1013.70', '0.00', 0, 0, '0.80', '0.00'),
 (2, 2021, 90028544, 27, 27, '1494.1', 0, 0, '0.80', '0.00', '0.00', '0.80', '10.90', '16.10', 0, '12.20', '0.00', '966.00', '918.30', '0.40', '0.40', '1116.10', '0.00', 0, 0, '0.00', '0.00'),
 (3, 2021, 90028973, 32, 32, '1854.7', 0, 0, '0.00', '0.40', '0.00', '0.00', '0.80', '0.40', 1, '0.40', '0.00', '535.80', '434.70', '0.00', '0.00', '720.00', '52.20', 20, 5, '0.00', '0.40'),
