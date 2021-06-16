@@ -8,8 +8,9 @@
     Pays
 @endsection
 
-
 @section('contenu')
+    <header class="fs-1 text-center fw-bold">Voici les différents pays</header>
+    <p class="text-center mb-5 border-bottom">(Cliquer sur un pays pour découvrir ses championnats)</p>
     <div class="container">
         <div class="row justify-content-md-center">
         @foreach($pays as $p)

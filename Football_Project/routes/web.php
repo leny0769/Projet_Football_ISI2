@@ -6,7 +6,6 @@ use App\Http\Controllers\ChampionnatController;
 use App\Http\Controllers\ClubController;
 use App\Http\Controllers\JoueurController;
 
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,11 +17,20 @@ use App\Http\Controllers\JoueurController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/',[PayController::class, 'index']);
+
+//Route::get('/dashboard', function () {
+//    return view('dashboard');
+//})->middleware(['auth'])->name('dashboard');
+
 
 Route::resource('pay',PayController::class);
 Route::resource('championnats',ChampionnatController::class);
 Route::resource('clubs',ClubController::class);
 Route::resource('joueurs',JoueurController::class);
+
+require __DIR__.'/auth.php';

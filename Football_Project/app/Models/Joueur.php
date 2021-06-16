@@ -22,7 +22,8 @@ class Joueur extends Model
         'Nationalité',
         'PhotoURL',
         'TypeJoueur',
-        'Numéro'
+        'Numéro',
+        'club_id'
     ];
 
     public function clubs(){

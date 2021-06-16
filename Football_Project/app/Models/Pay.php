@@ -9,10 +9,8 @@ class Pay extends Model
 {
     use HasFactory;
 
-    //public $table = 'pays';
     public $timestamps = false;
    
-
     public function championnats(){
         return $this->hasMany(Championnat::class);
     }

@@ -3,7 +3,9 @@
 namespace App\Http\Controllers;
 
 use App\Models\Joueur;
+use App\Models\Club;
 use Illuminate\Http\Request;
+use App\Http\Requests\InsertJoueurRequest;
 
 class JoueurController extends Controller
 {
@@ -25,7 +27,7 @@ class JoueurController extends Controller
      */
     public function create()
     {
-        //
+        return view("create");
     }
 
     /**
@@ -34,9 +36,10 @@ class JoueurController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(InsertJoueurRequest $request)
     {
-        //
+        Joueur::create($request->all());
+        return view('confirm');
     }
 
     /**

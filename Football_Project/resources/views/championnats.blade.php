@@ -8,6 +8,9 @@
     Championnats
 @endsection
 
+@section('titreItem')
+    Voici la liste des championnats ({{ $pay->Nom }})
+@endsection
 
 @section('contenu')
     <div class="container">

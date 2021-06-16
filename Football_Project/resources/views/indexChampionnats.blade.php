@@ -8,6 +8,9 @@
     Championnats
 @endsection
 
+@section('titreItem')
+    Voici la liste des championnats
+@endsection
 
 @section('contenu')
     <div class="container">

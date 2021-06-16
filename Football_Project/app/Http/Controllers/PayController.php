@@ -52,7 +52,7 @@ class PayController extends Controller
     public function show(Pay $pay)
     {
         $championnats = $pay->championnats;
-        return view('championnats',compact('championnats'));
+        return view('championnats',compact('championnats', 'pay'));
     }
 
     /**

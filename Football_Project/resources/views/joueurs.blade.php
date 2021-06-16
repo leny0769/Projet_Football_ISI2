@@ -8,6 +8,9 @@
     Joueurs
 @endsection
 
+@section('titreItem')
+    Voici la liste des joueurs de {{$club->Nom}}
+@endsection
 
 @section('contenu')
     <div class="container">
