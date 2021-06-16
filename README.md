@@ -18,3 +18,16 @@ Pour ajouter la BD :
   4) Sur datagrip, les 13 tables sont normalement ajouté. Faites un clique droit sur le schéma "Football", "Run Sql Script", choissisez le script donné avec le projet
   
   5) Tout est bon !!!
+
+  Dernières précisions : 
+    Concernant la base de données
+    - Elle contient que les clubs appartenant à des championnats français. 
+    - Et, nous avons seulement les joueurs appartenant au club : Olympique Lyonnais. Notamment pour afficher les statistiques d'un joueur. 
+
+  Donc pour résumer, quand vous êtes sur la page d'acceuil : 
+    - Choisir France
+    - Choisir ligue 1 2021
+    - Choisir Olympique Lyonnais
+    - Choisir un joueur pour afficher ses statistiques et détails (Certains joueurs n'ont pas de stats).
+
+Merci !
