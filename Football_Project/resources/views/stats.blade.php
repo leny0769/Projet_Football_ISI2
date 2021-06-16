@@ -24,8 +24,8 @@
                     <h4 class="card-title text-center">Informations joueur</h4>
                     <p class="card-title">Poste : {{ $joueur->Poste }}</p>
                     <p class="card-title">PiedFort : {{ $joueur->PiedFort }}</p>
-                    <p class="card-title">Taille : {{ $joueur->Taille }}</p>
-                    <p class="card-title">Poids : {{ $joueur->Poids }}</p>
+                    <p class="card-title">Taille : {{ $joueur->Taille }} cm</p>
+                    <p class="card-title">Poids : {{ $joueur->Poids }} kg</p>
                     <p class="card-title">DateNaissance : {{ $joueur->DateNaissance }}</p>
                     <p class="card-title">VilleNaissance : {{ $joueur->VilleNaissance }}</p>
                     <p class="card-title">Nationalité : {{ $joueur->Nationalité }}</p>
