@@ -1,4 +1,6 @@
 # Projet_Football_ISI2
+# Antoine DUMAS 11802788
+# Lény METZGER 12008566
 
 Pour ajouter la BD : 
   1) creer une schéma nommé "Football" sur WSL2@localhost
